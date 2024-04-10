@@ -78,7 +78,71 @@ label {
 }
 
 .main_container {
-  max-width: 1380px;
-  padding: 0 10px;
+  max-width: 1264px;
+  padding: 0 32px;
   margin: 0 auto;
+}
+
+header {
+  padding: 15px 0;
+}
+header .main_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header_left {
+  display: flex;
+  align-items: center;
+  gap: 55px;
+}
+header .header_left .header_link {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+header .header_contact {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+header .header_contact span {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+header .header_right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+header .header_burger {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 993px) {
+  .main_container {
+    padding: 0 15px;
+  }
+  header .header_contact span {
+    display: none;
+  }
+  header .header_link {
+    display: none;
+  }
+  header .header_burger {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 576px) {
+  header .main_container {
+    gap: 10px;
+  }
+  header .header_contact {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

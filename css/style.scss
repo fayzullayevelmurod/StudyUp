@@ -111,7 +111,57 @@ label {
 }
 
 .main_container {
-    max-width: 1380px;
-    padding: 0 10px;
+    max-width: 1264px;
+    padding: 0 32px;
     margin: 0 auto;
 }
+
+// header
+header {
+    padding: 15px 0;
+
+    .main_container {
+        @include flex-center();
+        justify-content: space-between;
+    }
+
+    .header_left {
+        @include flex-center();
+        gap: 55px;
+
+        .header_link {
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+        }
+    }
+
+    .header_contact {
+        @include flex-center();
+        gap: 8px;
+
+        span {
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+        }
+    }
+
+    .header_right {
+        @include flex-center();
+        gap: 30px;
+    }
+
+    .header_burger {
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+}
+// header
+
+
+
+@import './responsive';
