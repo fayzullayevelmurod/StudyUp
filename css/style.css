@@ -132,16 +132,33 @@ header .header_burger {
   align-items: center;
   justify-content: center;
 }
-header .header_media {
+header .header_media_bg {
+  display: none;
   position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
   top: 0;
-  right: 0;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+header .header_media_bg.active {
+  display: block;
+}
+header .header_media {
+  max-width: 260px;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: -100%;
   height: 100dvh;
   padding: 60px 40px 38px 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background: rgb(17, 17, 17);
+  transition: 0.2s ease;
 }
 header .header_media .header_media_close {
   position: absolute;
@@ -179,7 +196,77 @@ header .header_media .header_media_phone {
   font-weight: 400;
   line-height: 22px;
 }
+header .header_media.active {
+  right: 0;
+}
 
+footer {
+  overflow: hidden;
+  border-radius: 35px 35px 0px 0px;
+  background: rgb(250, 250, 250);
+  padding: 45px 0;
+}
+footer .main_container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer ul a {
+  font-family: "ONY-FORM Digital PROFI Medium";
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+footer .footer_network {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer_network .footer_social_network {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 36px;
+}
+footer .footer_network .footer_social_network a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+footer .footer_network a {
+  font-family: "ONY-FORM Digital PROFI Medium";
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+footer .footer_left span {
+  color: rgb(0, 0, 0);
+  font-family: "ONY-FORM Digital PROFI Medium";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+@media only screen and (min-width: 993px) {
+  header .header_media {
+    display: none;
+  }
+  header .header_media_bg {
+    display: none;
+  }
+  header .header_media_bg.active {
+    display: none;
+  }
+}
 @media only screen and (max-width: 993px) {
   .main_container {
     padding: 0 15px;
@@ -193,6 +280,30 @@ header .header_media .header_media_phone {
   header .header_burger {
     display: flex;
   }
+  footer .main_container {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 15px 0 84px;
+    gap: 15px;
+  }
+  footer .main_container .footer_block {
+    width: calc(50% - 10px);
+  }
+  footer .main_container ul {
+    gap: 15px;
+  }
+  footer .main_container .footer_left {
+    order: 1;
+  }
+  footer .main_container .footer_list_one {
+    order: 2;
+  }
+  footer .main_container .footer_list_two {
+    order: 4;
+  }
+  footer .main_container .footer_network {
+    order: 3;
+  }
 }
 @media only screen and (max-width: 576px) {
   header .main_container {
@@ -200,5 +311,36 @@ header .header_media .header_media_phone {
   }
   header .header_contact {
     display: none;
+  }
+  footer .main_container {
+    padding: 0 15px;
+    gap: 12px;
+  }
+  footer .main_container .footer_block {
+    width: 100%;
+  }
+  footer .main_container .footer_left {
+    order: 1;
+  }
+  footer .main_container .footer_list_one {
+    order: 2;
+  }
+  footer .main_container ul {
+    gap: 12px;
+  }
+  footer .main_container .footer_list_two {
+    order: 3;
+  }
+  footer .main_container .footer_network {
+    order: 4;
+  }
+  footer .main_container .footer_network {
+    margin-top: 12px;
+  }
+  footer .main_container .footer_network .footer_social_network {
+    margin-bottom: 24px;
+  }
+  footer .main_container .footer_left {
+    margin-bottom: 12px;
   }
 }/*# sourceMappingURL=style.css.map */

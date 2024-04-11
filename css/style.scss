@@ -169,16 +169,34 @@ header {
         justify-content: center;
     }
 
-    .header_media {
+    .header_media_bg {
+        display: none;
         position: fixed;
+        width: 100%;
+        height: 100%;
+        left: 0;
         top: 0;
-        right: 0;
+        background: rgba(255,255,255,0.2);
+        backdrop-filter: blur(2px);
+    }
+
+    .header_media_bg.active {
+        display: block;
+    }
+
+    .header_media {
+        max-width: 260px;
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        right: -100%;
         height: 100dvh;
         padding: 60px 40px 38px 40px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         background: rgb(17, 17, 17);
+        @include transition();
 
         .header_media_close {
             position: absolute;
@@ -222,9 +240,80 @@ header {
             line-height: 22px;
         }
     }
+
+    .header_media.active {
+        right: 0;
+    }
 }
 // header
 
+
+// footer
+footer {
+    overflow: hidden;
+    border-radius: 35px 35px 0px 0px;
+    background: rgb(250, 250, 250);
+    padding: 45px 0;
+
+    .main_container {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        a {
+            font-family: "ONY-FORM Digital PROFI Medium";
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+        }
+    }
+
+    .footer_network {
+        display: flex;
+        flex-direction: column;
+
+        .footer_social_network {
+            display: flex;
+            gap: 28px;
+            margin-bottom: 36px;
+
+            a {
+                @include flex-center();
+                gap: 8px;
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 18px;
+            }
+        }
+
+        a {
+            font-family: "ONY-FORM Digital PROFI Medium";
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 30px;
+        }
+    }
+
+    .footer_left {
+        span {
+            color: rgb(0, 0, 0);
+            font-family: "ONY-FORM Digital PROFI Medium";
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 30px;
+        }
+    }
+}
+// footer
 
 
 @import './responsive';
