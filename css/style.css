@@ -589,12 +589,32 @@ footer .footer_left span {
     font-size: 18px;
     line-height: 22px;
   }
+  .cost_classes {
+    margin-bottom: 78px;
+  }
+  .cost_classes .main_title {
+    margin-bottom: 40px;
+  }
   .cost_classes .cost_classes_cards {
     gap: 36px 27px;
     flex-wrap: wrap;
   }
   .cost_classes .cost_classes_cards .cost_classes_card {
+    padding: 28px 18px 32px 18px;
     width: calc(50% - 20px);
+  }
+  .cost_classes .cost_classes_cards .cost_classes_card h6 {
+    margin-bottom: 10px;
+  }
+  .cost_classes .cost_classes_cards .cost_classes_card h5 {
+    margin: 16px 0 2px 0;
+  }
+  .cost_classes .cost_classes_cards .cost_classes_card p {
+    margin: 30px 0;
+  }
+  .cost_classes .cost_classes_cards .cost_classes_card .main_btn {
+    width: 100%;
+    padding: 12px 30px;
   }
   footer .main_container {
     flex-wrap: wrap;
@@ -623,6 +643,10 @@ footer .footer_left span {
 @media only screen and (max-width: 650px) {
   .main_container {
     padding: 0 15px;
+  }
+  .main_title {
+    font-size: 22px;
+    line-height: 26px;
   }
   header .main_container {
     gap: 10px;
@@ -682,6 +706,36 @@ footer .footer_left span {
   }
   .contact_block .contact_block_form span a {
     border-bottom: 1px solid;
+  }
+  .cost_classes {
+    margin-bottom: 70px;
+  }
+  .cost_classes .cost_classes_cards {
+    gap: 23px;
+  }
+  .cost_classes .cost_classes_cards .cost_classes_card {
+    padding: 28px 57px 32px 57px;
+    width: 100%;
+  }
+  .cost_classes .cost_classes_cards .cost_classes_card h6 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 5px;
+  }
+  .cost_classes .cost_classes_cards .cost_classes_card h5 {
+    margin: 9px 0 1px 0;
+    font-size: 30px;
+    line-height: 39px;
+  }
+  .cost_classes .cost_classes_cards .cost_classes_card p {
+    margin: 22px 0 17px 0;
+    font-size: 16px;
+    line-height: 20px;
+    height: auto;
+  }
+  .cost_classes .cost_classes_cards .cost_classes_card .main_btn {
+    font-size: 14px;
+    line-height: 18px;
   }
   footer .main_container {
     padding: 0 15px;

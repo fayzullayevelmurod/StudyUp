@@ -206,11 +206,36 @@
     }
 
     .cost_classes {
+        margin-bottom: 78px;
+
+        .main_title {
+            margin-bottom: 40px;
+        }
+
         .cost_classes_cards {
             gap: 36px 27px;
             flex-wrap: wrap;
+
             .cost_classes_card {
+                padding: 28px 18px 32px 18px;
                 width: calc(100% / 2 - 20px);
+
+                h6 {
+                    margin-bottom: 10px;
+                }
+
+                h5 {
+                    margin: 16px 0 2px 0;
+                }
+
+                p {
+                    margin: 30px 0;
+                }
+
+                .main_btn {
+                    width: 100%;
+                    padding: 12px 30px;
+                }
             }
         }
     }
@@ -253,6 +278,11 @@
 
     .main_container {
         padding: 0 15px;
+    }
+
+    .main_title {
+        font-size: 22px;
+        line-height: 26px;
     }
 
     header {
@@ -335,6 +365,43 @@
                 line-height: 12px;
                 a {
                     border-bottom: 1px solid;
+                }
+            }
+        }
+    }
+
+    .cost_classes {
+        margin-bottom: 70px;
+
+        .cost_classes_cards {
+            gap: 23px;
+
+            .cost_classes_card {
+                padding: 28px 57px 32px 57px; 
+                width: 100%;
+
+                h6 {
+                    font-size: 18px;
+                    line-height: 22px;
+                    margin-bottom: 5px;
+                }
+
+                h5 {
+                    margin: 9px 0 1px 0;
+                    font-size: 30px;
+                    line-height: 39px;
+                }
+
+                p {
+                    margin: 22px 0 17px 0;
+                    font-size: 16px;
+                    line-height: 20px;
+                    height: auto;
+                }
+
+                .main_btn {
+                    font-size: 14px;
+                    line-height: 18px;
                 }
             }
         }
