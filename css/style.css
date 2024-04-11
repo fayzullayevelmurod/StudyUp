@@ -1,12 +1,10 @@
 @font-face {
   font-family: "ONY-FORM Digital PROFI Regular";
   src: url("../fonts/ONY-FORM-Digital-PROFI-normal-400-100.ttf");
-  font-weight: 400;
 }
 @font-face {
   font-family: "ONY-FORM Digital PROFI Medium";
   src: url("../fonts/ONY-FORM-Digital-PROFI-Medium-normal-600-100.ttf");
-  font-weight: 500;
 }
 * {
   margin: 0;
@@ -38,17 +36,17 @@ html {
 }
 
 body {
-  font-family: "ONY-FORM Digital PROFI Regular", sans-serif;
+  font-family: "ONY-FORM Digital PROFI Medium";
   font-style: normal;
 }
 
 input {
-  font-family: "ONY-FORM Digital PROFI Regular", sans-serif;
+  font-family: "ONY-FORM Digital PROFI Medium";
   outline: none;
 }
 
 button {
-  font-family: "ONY-FORM Digital PROFI Regular", sans-serif;
+  font-family: "ONY-FORM Digital PROFI Medium";
   border: none;
   cursor: pointer;
   background: transparent;
@@ -92,6 +90,13 @@ label {
   line-height: 22px;
   border-radius: 5px;
   background: rgb(255, 111, 54);
+}
+
+.main_title {
+  color: rgb(0, 0, 0);
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 52px;
 }
 
 header {
@@ -139,6 +144,7 @@ header .header_media_bg {
   position: fixed;
   width: 100%;
   height: 100%;
+  z-index: 4;
   left: 0;
   top: 0;
   background: rgba(255, 255, 255, 0.2);
@@ -151,7 +157,7 @@ header .header_media_bg.active {
 header .header_media {
   max-width: 260px;
   position: fixed;
-  z-index: 3;
+  z-index: 5;
   top: 0;
   right: -100%;
   height: 100dvh;
@@ -233,6 +239,14 @@ header .header_media.active {
   bottom: -55px;
   margin: 0 auto;
 }
+.contact_block .contact_block_table_img {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -55px;
+  margin: 0 auto;
+}
 .contact_block .contact_block_left h4 {
   color: rgb(255, 255, 255);
   font-size: 42px;
@@ -301,7 +315,73 @@ header .header_media.active {
   text-align: center;
 }
 
+.cost_classes {
+  margin-bottom: 89px;
+}
+.cost_classes .main_title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+.cost_classes .cost_classes_cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.cost_classes .cost_classes_card {
+  width: 258px;
+  text-align: center;
+  padding: 40px 42px;
+  box-sizing: border-box;
+  border: 1px solid rgb(219, 229, 255);
+  border-radius: 15px;
+  background: rgb(255, 255, 255);
+  transition: 0.2s ease;
+}
+.cost_classes .cost_classes_card h6 {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+.cost_classes .cost_classes_card h5 {
+  font-family: "ONY-FORM Digital PROFI Medium";
+  color: rgb(0, 0, 0);
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 52px;
+  margin: 20px 0;
+}
+.cost_classes .cost_classes_card span {
+  color: rgb(140, 140, 140);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.cost_classes .cost_classes_card p {
+  margin: 28px 0 17px 0;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  height: 72px;
+}
+.cost_classes .cost_classes_card .main_btn {
+  padding: 15px 30px;
+  transition: 0.2s ease;
+}
+.cost_classes .cost_classes_card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.cost_classes .cost_classes_card:hover .main_btn {
+  color: #fff;
+  background: rgb(99, 71, 255);
+}
+
 footer {
+  position: relative;
+  z-index: 2;
   overflow: hidden;
   border-radius: 35px 35px 0px 0px;
   background: rgb(250, 250, 250);
@@ -357,6 +437,92 @@ footer .footer_left span {
   line-height: 30px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .main_title {
+    font-size: 36px;
+    line-height: 47px;
+  }
+  .contact_block {
+    margin-bottom: 45px;
+  }
+  .contact_block .contact_block_table_img {
+    display: block;
+    bottom: -50px;
+  }
+  .contact_block .contact_block_desktop_img {
+    display: none;
+  }
+  .contact_block .contact_block_in {
+    padding: 54px 20px 47px 30px;
+  }
+  .contact_block .contact_block_in .contact_circle {
+    width: 500px;
+    height: 500px;
+    top: 71px;
+    right: -215px;
+  }
+  .contact_block .contact_block_left h5 {
+    font-size: 36px;
+    line-height: 47px;
+    margin-bottom: 33px;
+  }
+  .contact_block .contact_block_left h6 {
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 60px;
+  }
+  .contact_block .contact_block_left ul {
+    gap: 34px;
+    max-width: 300px;
+  }
+  .contact_block .contact_block_left ul li {
+    gap: 5px;
+  }
+  .contact_block .contact_block_left ul li span {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .contact_block .contact_block_form {
+    padding: 32px 24px;
+    width: 310px;
+    height: 355px;
+  }
+  .contact_block .contact_block_form input {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 30px;
+  }
+  .contact_block .contact_block_form span {
+    margin-top: 15px;
+  }
+  .cost_classes .cost_classes_cards .cost_classes_card {
+    padding: 44px 36px;
+  }
+  .cost_classes .cost_classes_cards .cost_classes_card h6 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .cost_classes .cost_classes_cards .cost_classes_card h5 {
+    margin: 14px 0 12px 0;
+    font-size: 42px;
+    line-height: 52px;
+  }
+  .cost_classes .cost_classes_cards .cost_classes_card p {
+    margin: 15px 0;
+    font-size: 14px;
+    line-height: 18px;
+    height: 54px;
+  }
+  .cost_classes .cost_classes_cards .cost_classes_card span {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .cost_classes .cost_classes_cards .cost_classes_card .main_btn {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
 @media only screen and (min-width: 993px) {
   header .header_media {
     display: none;
@@ -370,7 +536,7 @@ footer .footer_left span {
 }
 @media only screen and (max-width: 993px) {
   .main_container {
-    padding: 0 15px;
+    padding: 0 84px;
   }
   header .header_contact span {
     display: none;
@@ -381,10 +547,58 @@ footer .footer_left span {
   header .header_burger {
     display: flex;
   }
+  .contact_block .contact_block_in {
+    padding: 40px 24px;
+    gap: 50px;
+    flex-direction: column;
+  }
+  .contact_block .contact_block_in .contact_circle {
+    top: auto;
+    bottom: -70px;
+    right: -250px;
+  }
+  .contact_block .contact_block_table_img {
+    right: auto;
+    left: -187px;
+  }
+  .contact_block .contact_block_form {
+    margin-left: auto;
+  }
+  .contact_block .contact_block_table_img {
+    margin-right: auto;
+  }
+  .contact_block .contact_block_left h4 {
+    text-align: center;
+    font-size: 36px;
+    line-height: 47px;
+    margin-bottom: 24px;
+  }
+  .contact_block .contact_block_left h6 {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  .contact_block .contact_block_left ul {
+    gap: 26px;
+    max-width: 100%;
+  }
+  .contact_block .contact_block_left ul a {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .cost_classes .cost_classes_cards {
+    gap: 36px 27px;
+    flex-wrap: wrap;
+  }
+  .cost_classes .cost_classes_cards .cost_classes_card {
+    width: calc(50% - 20px);
+  }
   footer .main_container {
     flex-wrap: wrap;
     justify-content: center;
-    padding: 0 15px 0 84px;
     gap: 15px;
   }
   footer .main_container .footer_block {
@@ -406,12 +620,68 @@ footer .footer_left span {
     order: 3;
   }
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 650px) {
+  .main_container {
+    padding: 0 15px;
+  }
   header .main_container {
     gap: 10px;
   }
   header .header_contact {
     display: none;
+  }
+  .contact_block .contact_block_table_img {
+    display: none;
+  }
+  .contact_block .contact_block_form {
+    width: 100%;
+  }
+  .contact_block .contact_block_in {
+    padding: 24px 14px;
+    gap: 33px;
+  }
+  .contact_block .contact_block_in .contact_circle {
+    width: 400px;
+    height: 400px;
+    bottom: -10px;
+  }
+  .contact_block .contact_block_left h4 {
+    font-size: 30px;
+    line-height: 29px;
+    margin-bottom: 20px;
+  }
+  .contact_block .contact_block_left h4 br {
+    display: none;
+  }
+  .contact_block .contact_block_left h6 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 33px;
+  }
+  .contact_block .contact_block_left ul li img {
+    width: 20px;
+  }
+  .contact_block .contact_block_left ul li span {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .contact_block .contact_block_form {
+    padding: 32px 41px;
+  }
+  .contact_block .contact_block_form .main_btn {
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .contact_block .contact_block_form input {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .contact_block .contact_block_form span {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .contact_block .contact_block_form span a {
+    border-bottom: 1px solid;
   }
   footer .main_container {
     padding: 0 15px;

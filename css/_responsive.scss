@@ -1,5 +1,114 @@
-@media only screen and (max-width: 1100px) {
-    
+@media only screen and (max-width: 1200px) {
+
+    .main_title {
+        font-size: 36px;
+        line-height: 47px;
+    }
+
+    .contact_block {
+        margin-bottom: 45px;
+
+        .contact_block_table_img {
+            display: block;
+            bottom: -50px;
+        }
+
+        .contact_block_desktop_img {
+            display: none;
+        }
+
+        .contact_block_in {
+            padding: 54px 20px 47px 30px;
+
+            .contact_circle {
+                width: 500px;
+                height: 500px;
+                top: 71px;
+                right: -215px;
+            }
+        }
+
+        .contact_block_left {
+            h5 {
+                font-size: 36px;
+                line-height: 47px;
+                margin-bottom: 33px;
+            }
+
+            h6 {
+                font-size: 22px;
+                line-height: 26px;
+                margin-bottom: 60px;
+            }
+
+            ul {
+                gap: 34px;
+                max-width: 300px;
+
+                li {
+                    gap: 5px;
+
+                    span {
+                        font-size: 18px;
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+
+        .contact_block_form {
+            padding: 32px 24px;
+            width: 310px;
+            height: 355px;
+
+            input {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
+                margin-bottom: 30px;
+            }
+
+            span {
+                margin-top: 15px;
+            }
+        }
+    }
+
+    .cost_classes {
+        .cost_classes_cards {
+            .cost_classes_card {
+                padding: 44px 36px;
+
+                h6 {
+                    font-size: 20px;
+                    line-height: 22px;
+                }
+
+                h5 {
+                    margin: 14px 0 12px 0;
+                    font-size: 42px;
+                    line-height: 52px;
+                }
+
+                p {
+                    margin: 15px 0;
+                    font-size: 14px;
+                    line-height: 18px;
+                    height: 54px;
+                }
+
+                span {
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+
+                .main_btn {
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 993px) {
@@ -20,7 +129,7 @@
 
 @media only screen and (max-width: 993px) {
     .main_container {
-        padding: 0 15px;
+        padding: 0 84px;
     }
 
     header {
@@ -41,11 +150,75 @@
         
     }
 
+    .contact_block {
+        .contact_block_in {
+            padding: 40px 24px;
+            gap: 50px;
+            flex-direction: column;
+
+            .contact_circle {
+                top: auto;
+                bottom: -70px;
+                right: -250px;
+            }
+        }
+        
+        .contact_block_table_img {
+            right: auto;
+            left: -187px;
+        }
+
+        .contact_block_form {
+            margin-left: auto;
+        }
+
+        .contact_block_table_img {
+            margin-right: auto;
+        }
+
+        .contact_block_left  {
+            h4 {
+                text-align: center;
+                font-size: 36px;
+                line-height: 47px;
+                margin-bottom: 24px;
+            }
+
+            h6 {
+                color: rgb(255, 255, 255);
+                font-size: 22px;
+                font-weight: 400;
+                line-height: 26px;
+                text-align: center;
+                margin-bottom: 48px;
+            }
+
+            ul {
+                gap: 26px;
+                max-width: 100%;
+
+                a {
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+
+    .cost_classes {
+        .cost_classes_cards {
+            gap: 36px 27px;
+            flex-wrap: wrap;
+            .cost_classes_card {
+                width: calc(100% / 2 - 20px);
+            }
+        }
+    }
+
     footer {
         .main_container {
             flex-wrap: wrap;
             justify-content: center;
-            padding: 0 15px 0 84px;
             gap: 15px;
 
             .footer_block {
@@ -76,7 +249,12 @@
     }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 650px) {
+
+    .main_container {
+        padding: 0 15px;
+    }
+
     header {
 
         .main_container {
@@ -85,6 +263,80 @@
 
         .header_contact {
             display: none;
+        }
+    }
+
+    .contact_block {
+        .contact_block_table_img {
+            display: none;
+        }
+
+        .contact_block_form {
+            width: 100%;
+        }
+
+        .contact_block_in {
+            padding: 24px 14px;
+            gap: 33px;
+
+            .contact_circle {
+                width: 400px;
+                height: 400px;
+                bottom: -10px;
+            }
+        }
+
+        .contact_block_left {
+            h4 {
+                br {
+                    display: none;
+                }
+
+                font-size: 30px;
+                line-height: 29px;
+                margin-bottom: 20px;
+            }
+
+            h6 {
+                font-size: 20px;
+                line-height: 30px;
+                margin-bottom: 33px;
+            }
+
+            ul {
+                li {
+                    img {
+                        width: 20px;
+                    }
+
+                    span {
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+
+        .contact_block_form {
+            padding: 32px 41px;
+
+            .main_btn {
+                font-size: 17px;
+                line-height: 20px;
+            }
+
+            input {
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+            span {
+                font-size: 10px;
+                line-height: 12px;
+                a {
+                    border-bottom: 1px solid;
+                }
+            }
         }
     }
 
