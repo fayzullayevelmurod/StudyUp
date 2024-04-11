@@ -5,6 +5,16 @@
         line-height: 47px;
     }
 
+    .home {
+        .home_right {
+            max-width: 461px;
+
+            img {
+                max-width: 461px;
+            }
+        }
+    }
+
     .contact_block {
         margin-bottom: 45px;
 
@@ -150,6 +160,32 @@
         
     }
 
+    .home {
+        .main_container {
+            flex-direction: column-reverse;
+            gap: 16px;
+        }
+
+        .home_left {
+            ul {
+                margin: 33px 0 15px 0;
+            }
+
+            .main_btn {
+                text-align: center;
+                width: 100%;
+            }
+        }
+
+        .home_right {
+            max-width: 502px;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
     .contact_block {
         .contact_block_in {
             padding: 40px 24px;
@@ -293,6 +329,23 @@
 
         .header_contact {
             display: none;
+        }
+    }
+
+    .home {
+        .home_left {
+            ul {
+                gap: 5px;
+                margin: 32px 0;
+                li {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+
+            .main_btn {
+                padding: 12px 30px;
+            }
         }
     }
 

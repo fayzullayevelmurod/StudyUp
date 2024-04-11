@@ -253,6 +253,8 @@ header {
 
 // home
 .home {
+    margin-bottom: 70px;
+    
     .main_container {
         @include flex-center();
         justify-content: space-between;
@@ -260,11 +262,7 @@ header {
     }
 
     .home_left {
-        max-width: 615px;
-        
-        .main_title {
-
-        }
+        max-width: 600px;
 
         ul {
             margin: 35px 0;
@@ -284,6 +282,13 @@ header {
 
         .main_btn {
             padding: 16px 22px;
+        }
+    }
+
+    .home_right {
+        max-width: 511px;
+        img {
+            max-width: 511px;
         }
     }
 }
