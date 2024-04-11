@@ -76,10 +76,12 @@ body {
 }
 
 input {
+    font-family: 'ONY-FORM Digital PROFI Regular',sans-serif;
     outline: none;
 }
 
 button {
+    font-family: 'ONY-FORM Digital PROFI Regular',sans-serif;
     border: none;
     cursor: pointer;
     background: transparent;
@@ -247,6 +249,120 @@ header {
 }
 // header
 
+// contact_block
+.contact_block {
+    margin-bottom: 90px;
+
+    .contact_block_in {
+        position: relative;        
+        padding: 45px;
+        border-radius: 15px;
+        background: rgb(99, 71, 255);
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+
+        .contact_circle {
+            z-index: 1;
+            width: 540px;
+            height: 540px;
+            border-radius: 50%;
+            background: rgb(255, 255, 255);
+            opacity: 0.35;
+            position: absolute;
+            top: 25px;
+            bottom: 0;
+            right: -140px;
+        }
+    }
+
+    .contact_block_desktop_img {
+        position: absolute;
+        left: -50px;
+        right: 0;
+        bottom: -55px;
+        margin: 0 auto;
+    }
+
+    .contact_block_left {
+        h4 {
+            color: rgb(255, 255, 255);
+            font-size: 42px;
+            font-weight: 400;
+            line-height: 52px;
+            margin-bottom: 26px;
+        }
+
+        h6 {
+            color: rgb(255, 255, 255);
+            font-size: 27px;
+            font-weight: 400;
+            line-height: 32px;
+            margin-bottom: 52px;
+        }
+
+        ul {
+            max-width: 325px;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+
+            li {
+                @include flex-center();
+                gap: 28px;
+
+                span {
+                    color: rgb(255, 255, 255);
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+
+    .contact_block_form {
+        position: relative;
+        z-index: 2;
+        width: 387px;
+        height: 378px;
+        padding: 56px 38px 32px 38px;
+        border-radius: 15px;
+        background: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+
+        input {
+            margin-bottom: 37px;
+            outline: none;
+            color: rgb(140, 140, 140);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            padding-bottom: 12px;
+            border: none;
+            border-bottom: 1px solid rgb(0, 0, 0);
+        }
+
+        .tel {
+            margin-bottom: 23px;
+        }
+
+        .main_btn {
+            padding: 15px 0;
+        }
+
+        span {
+            color: rgb(0, 0, 0);
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 20px;
+            margin-top: 5px;
+            text-align: center;
+        }
+    }
+}
+// contact_block
 
 // footer
 footer {
