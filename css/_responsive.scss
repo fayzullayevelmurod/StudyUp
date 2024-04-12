@@ -132,6 +132,22 @@
         }
     }
 
+    .pay {
+        .contact_block_form {
+            height: auto;
+        }
+
+        .contact_block_table_img {
+            display: none;
+            bottom: -50px;
+        }
+
+        .contact_block_desktop_img {
+            display: block;
+            width: 238px;
+        }
+    }
+
     .error {
         padding: 53px 0 132px 0;
         
@@ -337,6 +353,24 @@
             padding: 15px;
             width: 230px;
             font-size: 16px;
+        }
+    }
+
+    .pay {
+        padding: 80px 0 45px;
+        
+        .contact_block_form {
+            height: auto;
+        }
+
+        .contact_block_table_img {
+            display: block;
+            bottom: -50px;
+        }
+
+        .contact_block_desktop_img {
+            display: none;
+            width: 238px;
         }
     }
 

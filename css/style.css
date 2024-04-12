@@ -347,6 +347,12 @@ header .header_media.active {
   margin-top: 5px;
   text-align: center;
 }
+.contact_block .contact_block_form span a {
+  border-bottom: 1px solid;
+}
+.contact_block .contact_block_form span .pay_link {
+  line-height: 10px;
+}
 
 .cost_classes {
   margin-bottom: 89px;
@@ -410,6 +416,13 @@ header .header_media.active {
 .cost_classes .cost_classes_card:hover .main_btn {
   color: #fff;
   background: rgb(99, 71, 255);
+}
+
+.pay {
+  margin: 90px 0;
+}
+.pay .contact_block_form {
+  height: auto;
 }
 
 .pay_successful {
@@ -691,6 +704,17 @@ footer .footer_left span {
     font-size: 14px;
     line-height: 18px;
   }
+  .pay .contact_block_form {
+    height: auto;
+  }
+  .pay .contact_block_table_img {
+    display: none;
+    bottom: -50px;
+  }
+  .pay .contact_block_desktop_img {
+    display: block;
+    width: 238px;
+  }
   .error {
     padding: 53px 0 132px 0;
   }
@@ -839,6 +863,20 @@ footer .footer_left span {
     padding: 15px;
     width: 230px;
     font-size: 16px;
+  }
+  .pay {
+    padding: 80px 0 45px;
+  }
+  .pay .contact_block_form {
+    height: auto;
+  }
+  .pay .contact_block_table_img {
+    display: block;
+    bottom: -50px;
+  }
+  .pay .contact_block_desktop_img {
+    display: none;
+    width: 238px;
   }
   .error {
     padding: 53px 0 118px 0;

@@ -414,6 +414,13 @@ header {
             line-height: 20px;
             margin-top: 5px;
             text-align: center;
+            a {
+                border-bottom: 1px solid;
+            }
+            
+            .pay_link {
+                line-height: 10px;
+            }
         }
     }
 }
@@ -495,6 +502,16 @@ header {
     }
 }
 // cost_classes
+
+// pay
+.pay {
+    margin: 90px 0;
+
+    .contact_block_form {
+        height: auto;
+    }
+}
+// pay
 
 // pay_successful
 .pay_successful {
