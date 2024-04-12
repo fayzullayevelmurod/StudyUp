@@ -215,6 +215,7 @@ header {
         }
 
         .more_repetitor {
+            white-space: nowrap;
             color: rgb(255, 255, 255);
             font-size: 14px;
             font-weight: 400;
@@ -254,7 +255,7 @@ header {
 // home
 .home {
     margin-bottom: 70px;
-    
+
     .main_container {
         @include flex-center();
         justify-content: space-between;
@@ -494,6 +495,64 @@ header {
     }
 }
 // cost_classes
+
+// error
+.error {
+    padding: 105px 0 87px 0;
+    background-image: url('../images/error_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .main_container {
+        @include flex-center();
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .error_text {
+        max-width: 620px;
+    }
+
+    .error_title {
+        position: relative;
+        @include flex-full-center();
+        margin-bottom: 58px;
+
+        .main_title {
+            white-space: nowrap;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            color: rgb(255, 111, 54);
+        }
+    }
+
+    .error_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        text-align: center;
+
+        p {
+            color: rgb(0, 0, 0);
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 26px;
+        }
+
+        .main_btn {
+            width: 272px;
+            white-space: nowrap;   
+            display: inline-block;
+            padding: 16px 45px;
+            border-radius: 15px;
+            background: rgb(117, 131, 255);
+        }
+    }
+}
+// error
 
 // footer
 footer {
