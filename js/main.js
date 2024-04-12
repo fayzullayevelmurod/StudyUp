@@ -19,3 +19,18 @@ header_media_bg.addEventListener('click', () => {
     header_media_bg.classList.remove('active')
 })
 
+// accardion
+const items = document.querySelectorAll('.accordion_item');
+
+items.forEach((item) => {
+    const accordion_btn = item.querySelector('.accordion_btn');
+    const content = item.querySelector('.content');
+
+    accordion_btn.addEventListener('click', () => {
+        content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + 'px';
+
+        item.classList.toggle('active')
+    });
+});
+// accardion
+

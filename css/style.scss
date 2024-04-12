@@ -654,6 +654,112 @@ header {
 }
 // error
 
+// tutors_head
+.tutors_head {
+    margin: 90px 0 255px 0;
+
+    h5 {
+        color: rgb(0, 0, 0);
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 62px;
+        margin-bottom: 16px;
+    }
+
+    ul {
+        li {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        }
+
+        a {
+            padding: 24px 0;
+            @include flex-center();
+            justify-content: space-between;
+        }
+
+        span {
+            color: rgb(0, 0, 0);
+            font-family: 'Roboto',sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            @include flex-center();
+            gap: 10px;
+        }
+    }
+}
+// tutors_head
+
+// tutors_content
+.tutors_content {
+
+    .main_title {
+        margin-bottom: 45px;
+    }
+
+    .accordion {
+        max-width: 755px;
+        margin-bottom: 45px;
+
+        &_item {
+            border-bottom: 1px solid rgb(223, 223, 223);
+            margin: 5px;
+    
+            .accardion_icon {
+                @include transition();
+            }
+        
+            &.active {        
+                .accardion_icon {
+                    transform: rotate(45deg);
+                }
+            }
+        }
+
+        &_btn {
+            text-align: left;
+            padding: 30px 0;
+            width: 100%;
+            @include flex-center();
+            justify-content: space-between;
+    
+            span {
+                color: rgb(0, 0, 0);
+                font-size: 22px;
+                font-weight: 400;
+                line-height: 26px;
+            }
+    
+        }
+    }
+
+    .content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+
+        p {
+            padding-bottom: 30px;
+        }
+    }
+
+    .tutors_text {
+        max-width: 971px;
+        margin-bottom: 45px;
+        p {
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 23px;
+
+            span {
+                font-weight: 600;
+            }
+        }
+    }
+}
+// tutors_content
+
 // footer
 footer {
     position: relative;

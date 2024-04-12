@@ -148,6 +148,13 @@
         }
     }
 
+    .tutors_content {
+        .main_title {
+            padding: 35px 0 25px;
+            margin: 0;
+        }
+    }
+
     .error {
         padding: 53px 0 132px 0;
         
@@ -387,6 +394,49 @@
         }
     }
 
+    .tutors_head {
+        margin: 90px 0 200px 0;
+
+        h5 {
+            font-size: 40px;
+            line-height: 52px;
+        }
+    }
+
+    .tutors_content {
+        .main_title {
+            padding: 35px 0 25px;
+        }
+
+        .accordion_btn {
+            padding: 24px 0;
+
+            span {
+                font-size: 18px;
+                line-height: 22px;
+            }
+
+            img {
+                width: 24px;
+            }
+        }
+
+        .content {
+            p {
+                font-size: 14px;
+                line-height: 25px;
+                padding-bottom: 24px;
+            }
+        }
+
+        .tutors_text {
+            p {
+                font-size: 16px;
+                line-height: 23px;
+            }
+        }
+    }
+
     footer {
         .main_container {
             flex-wrap: wrap;
@@ -618,6 +668,60 @@
 
             img {
                 width: 100%;
+            }
+        }
+    }
+
+    .tutors_content {
+        .main_title {
+            text-align: center;
+            padding: 25px 0 40px;
+        }
+
+        .accordion_btn {
+            padding: 15px 0;
+
+            span {
+                font-size: 16px;
+            }
+        }
+
+        .content {
+            p {
+                font-size: 12px;    
+                line-height: 17px;
+                padding-bottom: 15px;
+
+            }
+        }
+
+        .tutors_text {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            br {
+                display: none;
+            }
+        }
+    }
+
+    .tutors_head {
+        margin: 80px 0 190px 0;
+
+        h5 {
+            font-size: 40px;
+            line-height: 52px;
+        }
+
+        ul {
+            a {
+                padding: 20px 0;
+            }
+    
+            span {
+                font-size: 16px;
+                line-height: 19px;
             }
         }
     }
