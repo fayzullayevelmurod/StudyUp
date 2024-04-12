@@ -299,6 +299,35 @@
         }
     }
 
+    .pay_error {
+        h5 {
+            font-size: 32px;
+            line-height: 18px;
+        }
+
+        .pay_error_content {
+            img {
+                width: 230px;
+            }
+
+            span {
+                font-size: 18px;
+                line-height: 22px;
+            }
+
+            p {
+                font-size: 20px;
+                line-height: 26px;
+            }
+        }
+
+        .main_btn {
+            padding: 15px;
+            width: 230px;
+            font-size: 16px;
+        }
+    }
+
     .error {
         padding: 53px 0 118px 0;
 
@@ -493,6 +522,13 @@
                     line-height: 18px;
                 }
             }
+        }
+    }
+
+    .pay_error {
+        h5 {
+            font-size: 24px;
+            line-height: 18px;
         }
     }
 
