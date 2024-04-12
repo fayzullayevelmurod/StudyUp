@@ -496,6 +496,38 @@ header {
 }
 // cost_classes
 
+// pay_successful
+.pay_successful {
+    padding: 45px 0 153px 0;
+    text-align: center;
+
+    span {
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        text-transform: uppercase;
+    }
+
+    h5 {
+        max-width: 897px;
+        margin: 45px auto 90px auto;
+        color: rgb(0, 0, 0);
+        font-size: 82px;
+        font-weight: 400;
+        line-height: 106px;
+    }
+
+    p {
+        color: rgb(0, 0, 0);
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 34px;
+    }
+}
+// pay_successful
+
+// pay_error
 .pay_error {
     padding: 45px 0;
 
@@ -545,6 +577,7 @@ header {
         padding: 15px;
     }
 }
+// pay_error
 
 // error
 .error {

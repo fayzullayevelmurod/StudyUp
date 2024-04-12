@@ -412,6 +412,32 @@ header .header_media.active {
   background: rgb(99, 71, 255);
 }
 
+.pay_successful {
+  padding: 45px 0 153px 0;
+  text-align: center;
+}
+.pay_successful span {
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.pay_successful h5 {
+  max-width: 897px;
+  margin: 45px auto 90px auto;
+  color: rgb(0, 0, 0);
+  font-size: 82px;
+  font-weight: 400;
+  line-height: 106px;
+}
+.pay_successful p {
+  color: rgb(0, 0, 0);
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 34px;
+}
+
 .pay_error {
   padding: 45px 0;
 }
@@ -630,6 +656,14 @@ footer .footer_left span {
   }
   .contact_block .contact_block_form span {
     margin-top: 15px;
+  }
+  .pay_successful h5 {
+    font-size: 78px;
+    line-height: 101px;
+  }
+  .pay_successful p {
+    font-size: 22px;
+    line-height: 29px;
   }
   .cost_classes .cost_classes_cards .cost_classes_card {
     padding: 44px 36px;
@@ -947,6 +981,18 @@ footer .footer_left span {
   .cost_classes .cost_classes_cards .cost_classes_card .main_btn {
     font-size: 14px;
     line-height: 18px;
+  }
+  .pay_successful {
+    padding: 45px 0 266px 0;
+  }
+  .pay_successful h5 {
+    margin: 80px auto 45px auto;
+    font-size: 30px;
+    line-height: 39px;
+  }
+  .pay_successful p {
+    font-size: 20px;
+    line-height: 26px;
   }
   .pay_error h5 {
     font-size: 24px;

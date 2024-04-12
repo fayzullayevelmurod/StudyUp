@@ -84,6 +84,18 @@
         }
     }
 
+    .pay_successful {
+        h5 {
+            font-size: 78px;
+            line-height: 101px;
+        }
+
+        p {
+            font-size: 22px;
+            line-height: 29px;
+        }
+    }
+
     .cost_classes {
         .cost_classes_cards {
             .cost_classes_card {
@@ -522,6 +534,21 @@
                     line-height: 18px;
                 }
             }
+        }
+    }
+
+    .pay_successful {
+        padding: 45px 0 266px 0;
+
+        h5 {
+            margin: 80px auto 45px auto;
+            font-size: 30px;
+            line-height: 39px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 26px;
         }
     }
 
