@@ -115,6 +115,50 @@ label {
   line-height: 22px;
 }
 
+.main_form {
+  min-width: 330px;
+  padding: 24px 32px;
+  border: 1px solid rgb(140, 140, 140);
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: rgb(250, 250, 250);
+}
+.main_form h6 {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.main_form input {
+  width: 100%;
+  padding: 15px 20px;
+  color: rgb(140, 140, 140);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  box-sizing: border-box;
+  border: 1px solid rgb(140, 140, 140);
+  border-radius: 7px;
+}
+.main_form label {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 13px;
+}
+.main_form .main_btn {
+  padding: 15px;
+  width: 100%;
+  border-radius: 7px;
+  background: rgb(117, 131, 255);
+  font-size: 16px;
+  line-height: 18px;
+}
+
 header {
   padding: 15px 0;
 }
@@ -691,6 +735,41 @@ header .header_media.active {
   margin-bottom: 32px;
 }
 
+.reviews {
+  margin-bottom: 90px;
+}
+.reviews .reviews_content {
+  display: flex;
+  align-items: start;
+  gap: 50px;
+}
+.reviews .main_title {
+  margin-bottom: 45px;
+}
+.reviews .reviews_in {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.reviews .reviews_block {
+  border: 1px solid rgb(140, 140, 140);
+  border-radius: 15px;
+  padding: 24px 32px;
+}
+.reviews h6 {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 24px;
+}
+.reviews p {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
 footer {
   position: relative;
   z-index: 2;
@@ -862,6 +941,12 @@ footer .footer_left span {
   .tutors_content .main_title {
     padding: 35px 0 25px;
     margin: 0;
+  }
+  .reviews .main_form {
+    display: none;
+  }
+  .reviews .reviews_in {
+    max-width: 822px;
   }
   .error {
     padding: 53px 0 132px 0;
@@ -1325,6 +1410,22 @@ footer .footer_left span {
   .contact_head .main_btn {
     width: 100%;
     padding: 10px 5px;
+  }
+  .reviews .main_title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .reviews .reviews_block {
+    padding: 20px 24px;
+  }
+  .reviews h6 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 16px;
+  }
+  .reviews p {
+    font-size: 16px;
+    line-height: 22px;
   }
   footer .main_container {
     padding: 0 15px;

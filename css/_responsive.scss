@@ -155,6 +155,16 @@
         }
     }
 
+    .reviews {
+        .main_form {
+            display: none;
+        }
+
+        .reviews_in {
+            max-width: 822px;
+        }
+    }
+
     .error {
         padding: 53px 0 132px 0;
         
@@ -798,6 +808,28 @@
         .main_btn {
             width: 100%;
             padding: 10px 5px;
+        }
+    }
+
+    .reviews {
+        .main_title {
+            font-size: 30px;
+            line-height: 35px;
+        }
+
+        .reviews_block {
+            padding: 20px 24px;
+        }
+
+        h6 {
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 22px;
         }
     }
 
