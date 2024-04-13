@@ -165,6 +165,22 @@
         }
     }
 
+    .article {
+
+        .main_container {
+            gap: 30px;
+        }
+
+        .main_form {
+            width: 308px;
+        }
+
+        h3 {
+            font-size: 30px;
+            line-height: 35px;
+        }
+    }
+
     .error {
         padding: 53px 0 132px 0;
         
@@ -469,6 +485,16 @@
         .main_btn {
             font-size: 16px;
             width: 260px;
+        }
+    }
+
+    .article {
+        .main_form {
+            display: none;
+        }
+
+        .article_in {
+            gap: 20px;
         }
     }
 
@@ -830,6 +856,36 @@
         p {
             font-size: 16px;
             line-height: 22px;
+        }
+    }
+
+    .article {
+        .article_in {
+            gap: 15px;
+        }
+
+        h3 {
+            font-size: 22px;
+            line-height: 26px;
+        }
+
+        .article_date {
+            span {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+
+        p, b {
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        ol {
+            li {
+                font-size: 16px;
+                line-height: 22px;
+            }
         }
     }
 

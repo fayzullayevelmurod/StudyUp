@@ -100,6 +100,7 @@ label {
   display: flex;
   align-items: center;
   gap: 6px;
+  flex-wrap: wrap;
 }
 .breadcrumbs li {
   color: rgb(199, 199, 199);
@@ -770,6 +771,57 @@ header .header_media.active {
   line-height: 23px;
 }
 
+.article .main_container {
+  display: flex;
+  align-items: start;
+  gap: 40px;
+}
+.article .article_in {
+  max-width: 760px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.article .main_form {
+  width: 324px;
+}
+.article h3 {
+  color: rgb(0, 0, 0);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 47px;
+}
+.article .article_date {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+.article .article_date span {
+  display: flex;
+  align-items: center;
+  color: rgb(140, 140, 140);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.article p {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.article ol {
+  padding-left: 15px;
+}
+.article ol li {
+  list-style-type: decimal;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
 footer {
   position: relative;
   z-index: 2;
@@ -947,6 +999,16 @@ footer .footer_left span {
   }
   .reviews .reviews_in {
     max-width: 822px;
+  }
+  .article .main_container {
+    gap: 30px;
+  }
+  .article .main_form {
+    width: 308px;
+  }
+  .article h3 {
+    font-size: 30px;
+    line-height: 35px;
   }
   .error {
     padding: 53px 0 132px 0;
@@ -1166,6 +1228,12 @@ footer .footer_left span {
   .contact_head .main_btn {
     font-size: 16px;
     width: 260px;
+  }
+  .article .main_form {
+    display: none;
+  }
+  .article .article_in {
+    gap: 20px;
   }
   footer .main_container {
     flex-wrap: wrap;
@@ -1424,6 +1492,25 @@ footer .footer_left span {
     margin-bottom: 16px;
   }
   .reviews p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .article .article_in {
+    gap: 15px;
+  }
+  .article h3 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .article .article_date span {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .article p, .article b {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .article ol li {
     font-size: 16px;
     line-height: 22px;
   }

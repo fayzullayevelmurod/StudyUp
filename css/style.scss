@@ -132,6 +132,7 @@ label {
     margin: 28px 0 45px 0;
     @include flex-center();
     gap: 6px;
+    flex-wrap: wrap;
 
     li {
         color: rgb(199, 199, 199);
@@ -920,6 +921,68 @@ header {
     }
 }
 // reviews
+
+// article
+.article {
+
+    .main_container {
+        @include flex-start();
+        gap: 40px;
+    }
+
+    .article_in {
+        max-width: 760px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .main_form {
+        width: 324px;
+    }
+
+    h3 {
+        color: rgb(0, 0, 0);
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 47px;
+    }
+
+    .article_date {
+        @include flex-center();
+        gap: 12px;  
+        margin-top: 8px;
+
+        span {
+            @include flex-center();
+            color: rgb(140, 140, 140);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+        }
+    }
+
+    p {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+    
+    ol {
+        padding-left: 15px;
+
+        li {
+            list-style-type: decimal;
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 30px;
+        }
+    }
+
+}
+// article
 
 // footer
 footer {
