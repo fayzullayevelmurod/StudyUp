@@ -95,6 +95,26 @@ label {
   line-height: 52px;
 }
 
+.breadcrumbs {
+  margin: 28px 0 45px 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.breadcrumbs li {
+  color: rgb(199, 199, 199);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.breadcrumbs a,
+.breadcrumbs span {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
 header {
   padding: 15px 0;
 }
@@ -630,6 +650,47 @@ header .header_media.active {
   font-weight: 600;
 }
 
+.contact_head {
+  margin-bottom: 90px;
+}
+.contact_head .top_title {
+  display: none;
+  text-align: center;
+}
+.contact_head .contact_head_in {
+  border: 3px solid rgb(117, 131, 255);
+  border-radius: 15px;
+  padding: 1px 56px;
+}
+.contact_head .contact_head_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact_head .contact_head_img {
+  max-width: 443px;
+}
+.contact_head ul {
+  max-width: 310px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.contact_head ul li {
+  display: flex;
+  align-items: start;
+  gap: 12px;
+}
+.contact_head .main_btn {
+  text-align: center;
+  width: 334px;
+  padding: 15px;
+}
+.contact_head .main_title {
+  margin-bottom: 32px;
+}
+
 footer {
   position: relative;
   z-index: 2;
@@ -1004,6 +1065,23 @@ footer .footer_left span {
     font-size: 16px;
     line-height: 23px;
   }
+  .contact_head .contact_head_in {
+    padding: 40px 0 40px 56px;
+  }
+  .contact_head .contact_head_img {
+    max-width: 266px;
+  }
+  .contact_head .top_title {
+    display: block;
+    margin-bottom: 0;
+  }
+  .contact_head .contact_title {
+    display: none;
+  }
+  .contact_head .main_btn {
+    font-size: 16px;
+    width: 260px;
+  }
   footer .main_container {
     flex-wrap: wrap;
     justify-content: center;
@@ -1026,6 +1104,14 @@ footer .footer_left span {
   }
   footer .main_container .footer_network {
     order: 3;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .contact_head .contact_head_in {
+    padding: 16px 25px;
+  }
+  .contact_head .contact_head_img {
+    max-width: 250px;
   }
 }
 @media only screen and (max-width: 650px) {
@@ -1209,6 +1295,36 @@ footer .footer_left span {
   .tutors_head ul span {
     font-size: 16px;
     line-height: 19px;
+  }
+  .contact_head {
+    margin-bottom: 80px;
+  }
+  .contact_head .contact_head_in {
+    padding: 16px 25px;
+  }
+  .contact_head .contact_head_wrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contact_head .top_title {
+    margin-bottom: 24px;
+  }
+  .contact_head .contact_head_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact_head ul {
+    max-width: 100%;
+    gap: 20px;
+    margin-bottom: 24px;
+  }
+  .contact_head ul img {
+    width: 25px;
+  }
+  .contact_head .main_btn {
+    width: 100%;
+    padding: 10px 5px;
   }
   footer .main_container {
     padding: 0 15px;

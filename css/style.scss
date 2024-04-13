@@ -128,6 +128,27 @@ label {
     line-height: 52px;
 }
 
+.breadcrumbs {
+    margin: 28px 0 45px 0;
+    @include flex-center();
+    gap: 6px;
+
+    li {
+        color: rgb(199, 199, 199);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 22px;
+    }
+
+    a,
+    span {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+    }
+}
+
 // header
 header {
     padding: 15px 0;
@@ -759,6 +780,56 @@ header {
     }
 }
 // tutors_content
+
+// contact_head
+.contact_head {
+    margin-bottom: 90px;
+
+    .top_title {
+        display: none;
+        text-align: center;
+    }
+    
+    .contact_head_in {
+        border: 3px solid rgb(117, 131, 255);
+        border-radius: 15px;
+        padding: 1px 56px;
+    }
+    
+    .contact_head_wrapper {
+        @include flex-center();
+        justify-content: space-between;
+
+    }
+
+    .contact_head_img {
+        max-width: 443px;
+    }
+
+    ul {
+        max-width: 310px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 30px;
+
+        li {
+            @include flex-start();
+            gap: 12px;
+        }
+    }
+
+    .main_btn {
+        text-align: center;
+        width: 334px;
+        padding: 15px;
+    }
+
+    .main_title {
+        margin-bottom: 32px;
+    }
+}
+// contact_head
 
 // footer
 footer {
