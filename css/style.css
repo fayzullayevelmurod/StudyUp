@@ -835,6 +835,111 @@ header .header_media.active {
 .articles .articles_cards .articles_card {
   width: calc(33.3333333333% - 40px);
 }
+.articles .articles_cards h6 {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 20px 0 8px;
+}
+.articles .articles_cards p {
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 12px;
+}
+.articles .articles_cards .article_date {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.articles .articles_cards .article_date span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: rgb(140, 140, 140);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.articles .pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 90px;
+}
+.articles .pagination button {
+  width: 32px;
+  height: 32px;
+  border-radius: 7px;
+  background: rgb(223, 223, 223);
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  transition: 0.2s ease;
+}
+.articles .pagination button:hover {
+  color: #fff;
+  background: rgb(255, 140, 66);
+}
+.articles .pagination button.active {
+  color: #fff;
+  background: rgb(255, 140, 66);
+}
+.articles .articles_bottom {
+  display: flex;
+  align-items: stretch;
+  gap: 60px;
+}
+.articles .articles_bottom .articles_bottom_left {
+  position: relative;
+  border-radius: 15px;
+  padding: 20px 40px;
+  border: 1px solid rgb(92, 116, 255);
+}
+.articles .articles_bottom .articles_bottom_left .rocket_icon {
+  position: absolute;
+}
+.articles .articles_bottom .articles_bottom_left h6 {
+  max-width: 267px;
+  color: #000;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.articles .articles_bottom .articles_bottom_left h6 span {
+  color: rgb(99, 71, 255);
+}
+.articles .articles_bottom .articles_bottom_left .articles_bottom_left_btns {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.articles .articles_bottom .articles_bottom_left .articles_bottom_left_btns a {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 4px 24px;
+  border: 1px solid rgb(140, 140, 140);
+  border-radius: 15px;
+}
+.articles .articles_bottom .articles_bottom_left .articles_bottom_left_btns .vkontact_link {
+  border: 1px solid rgb(114, 135, 255);
+}
+.articles .articles_bottom .articles_bottom_left .articles_bottom_left_btns span {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.articles .articles_bottom .articles_bottom_right {
+  padding: 20px 30px;
+  border-radius: 15px;
+  background: rgb(92, 116, 255);
+}
 
 footer {
   position: relative;

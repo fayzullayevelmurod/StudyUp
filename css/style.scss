@@ -1001,6 +1001,124 @@ header {
         .articles_card {
             width: calc(100% / 3 - 40px);
         }
+
+        h6 {
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 22px;
+            margin: 20px 0 8px;
+        }
+
+        p {
+            color: rgb(0, 0, 0);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            margin-bottom: 12px;
+        }
+
+        .article_date {
+            @include flex-center();
+            gap: 12px;
+
+            span {
+                @include flex-center();
+                gap: 5px;
+                color: rgb(140, 140, 140);
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+            }
+        }
+    }
+
+    .pagination {
+        @include flex-full-center();
+        gap: 8px;
+        margin-bottom: 90px;
+
+        button {
+            width: 32px;
+            height: 32px;
+            border-radius: 7px;
+            background: rgb(223, 223, 223);
+            color: rgb(0, 0, 0);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            @include transition();
+
+            &:hover {
+                color: #fff;
+                background: rgb(255, 140, 66);
+            }
+        }
+
+        button.active {
+            color: #fff;
+            background: rgb(255, 140, 66);
+        }
+    }
+
+    .articles_bottom {
+        display: flex;
+        align-items: stretch;
+        gap: 60px;
+
+        .articles_bottom_left {
+            position: relative;
+            border-radius: 15px;
+            padding: 20px 40px;
+            border: 1px solid rgb(92, 116, 255);
+
+            .rocket_icon {
+                position: absolute;
+
+            }
+
+            h6 {
+                max-width: 267px;
+                color: #000;
+                font-size: 22px;
+                font-weight: 400;
+                line-height: 30px;
+
+                span {
+                    color: rgb(99, 71, 255);
+                }
+            }
+
+            .articles_bottom_left_btns {
+                @include flex-center();
+                gap: 12px;
+
+                a {
+                    @include flex-center();
+                    gap: 13px;
+                    padding: 4px 24px;
+                    border: 1px solid rgb(140, 140, 140);
+                    border-radius: 15px;
+                }
+
+                .vkontact_link {
+                    border: 1px solid rgb(114, 135, 255);
+                }
+
+                span {
+                    color: rgb(0, 0, 0);
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 18px;
+                }
+            }
+        }
+
+        .articles_bottom_right {
+            padding: 20px 30px;
+            border-radius: 15px;
+            background: rgb(92, 116, 255);
+        }
     }
 }
 // articles
