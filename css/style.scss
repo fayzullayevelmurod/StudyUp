@@ -1062,9 +1062,15 @@ header {
     }
 
     .articles_bottom {
+        margin-bottom: 45px;
         display: flex;
+        flex-wrap: wrap;
         align-items: stretch;
         gap: 60px;
+
+        .articles_bottom_card {
+            width: calc(100% / 2 - 30px);
+        }
 
         .articles_bottom_left {
             position: relative;
@@ -1074,10 +1080,13 @@ header {
 
             .rocket_icon {
                 position: absolute;
-
+                top: 50px;
+                right: 50px;
+                bottom: 50px;
             }
 
             h6 {
+                margin-bottom: 55px;
                 max-width: 267px;
                 color: #000;
                 font-size: 22px;
@@ -1099,6 +1108,10 @@ header {
                     padding: 4px 24px;
                     border: 1px solid rgb(140, 140, 140);
                     border-radius: 15px;
+
+                    img {
+                        width: 36px;
+                    }
                 }
 
                 .vkontact_link {
@@ -1115,9 +1128,74 @@ header {
         }
 
         .articles_bottom_right {
-            padding: 20px 30px;
+            position: relative;
+            overflow: hidden;
             border-radius: 15px;
             background: rgb(92, 116, 255);
+            display: flex;
+
+            .circle_top {
+                position: absolute;
+                z-index: 1;
+                top: -224px;
+                left: -64px;
+                border-radius: 3000px;
+                width: 314px;
+                height: 314px;
+                background: rgb(255, 255, 255);
+                opacity: 0.45;
+            }
+
+            .circle_bottom {
+                position: absolute;
+                z-index: 1;
+                bottom: -138px;
+                right: -95px;
+                border-radius: 3000px;
+                width: 314px;
+                height: 314px;
+                background: rgb(255, 255, 255);
+                opacity: 0.45;
+            }
+
+            p {
+                color: rgb(255, 255, 255);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 18px;
+                max-width: 200px;
+                margin: 25px 0 14px;
+            }
+            
+            .bottom_right_text {
+                position: relative;
+                z-index: 2;
+                padding: 20px 30px;
+            }
+
+            .bottom_right_img {
+
+                img {
+                    position: absolute;
+                    right: 20px;
+                    z-index: 2;
+                    bottom: 0;
+                }
+            }
+
+            .articles_right_btn {
+                text-align: center;
+                width: 268px;
+                color: rgb(255, 255, 255);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 18px;
+                padding: 15px;
+                box-sizing: border-box;
+                border: 1px solid rgb(255, 255, 255);
+                border-radius: 15px;
+                background: rgb(114, 135, 255);
+            }
         }
     }
 }
