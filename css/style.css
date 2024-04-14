@@ -822,6 +822,20 @@ header .header_media.active {
   line-height: 30px;
 }
 
+.articles .main_title {
+  margin-bottom: 45px;
+}
+.articles .articles_cards {
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 45px 60px;
+  margin-bottom: 45px;
+}
+.articles .articles_cards .articles_card {
+  width: calc(33.3333333333% - 40px);
+}
+
 footer {
   position: relative;
   z-index: 2;

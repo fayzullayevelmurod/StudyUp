@@ -984,6 +984,27 @@ header {
 }
 // article
 
+// articles
+.articles {
+
+    .main_title {
+        margin-bottom: 45px;
+    }
+
+    .articles_cards {
+        display: flex;
+        align-items: start;
+        flex-wrap: wrap;
+        gap: 45px 60px;
+        margin-bottom: 45px;
+
+        .articles_card {
+            width: calc(100% / 3 - 40px);
+        }
+    }
+}
+// articles
+
 // footer
 footer {
     position: relative;
