@@ -1046,18 +1046,17 @@ header .header_media.active {
 .tutor_page .tutor_page_user_left img {
   width: 100%;
 }
-.tutor_page .tutor_page_user_right {
-  width: 446px;
-  border: 1px solid red;
+.tutor_page .tutor_page_user_right .tutor_user_right_top {
+  max-width: 446px;
 }
-.tutor_page .tutor_page_user_right h6 {
+.tutor_page .tutor_page_user_right .tutor_user_right_top h6 {
   color: rgb(0, 0, 0);
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
   margin-bottom: 8px;
 }
-.tutor_page .tutor_page_user_right p {
+.tutor_page .tutor_page_user_right .tutor_user_right_top p {
   display: flex;
   align-items: center;
   gap: 6px;
@@ -1067,50 +1066,50 @@ header .header_media.active {
   line-height: 20px;
   margin-bottom: 18px;
 }
-.tutor_page .tutor_services h4 {
+.tutor_page .tutor_page_user_right .tutor_user_right_top .tutor_services h4 {
   color: rgb(0, 0, 0);
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
   margin-bottom: 20px;
 }
-.tutor_page .tutor_services .tutor_anons {
+.tutor_page .tutor_page_user_right .tutor_user_right_top .tutor_services .tutor_anons {
   margin-bottom: 13px;
   padding: 13px 12px 8px;
   border: 1px solid rgb(114, 135, 255);
   border-radius: 7px;
   position: relative;
 }
-.tutor_page .tutor_services .tutor_anons p {
+.tutor_page .tutor_page_user_right .tutor_user_right_top .tutor_services .tutor_anons p {
   color: rgb(0, 0, 0);
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   margin: 0;
 }
-.tutor_page .tutor_services .tutor_anons img {
+.tutor_page .tutor_page_user_right .tutor_user_right_top .tutor_services .tutor_anons img {
   position: absolute;
   left: 12px;
   top: -11px;
 }
-.tutor_page .tutor_services h5 {
+.tutor_page .tutor_page_user_right .tutor_user_right_top .tutor_services h5 {
   color: rgb(0, 0, 0);
   font-size: 16px;
   font-weight: 600;
   line-height: 18px;
   margin-bottom: 10px;
 }
-.tutor_page .tutor_services ul {
+.tutor_page .tutor_page_user_right .tutor_user_right_top .tutor_services ul {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-.tutor_page .tutor_services ul li {
+.tutor_page .tutor_page_user_right .tutor_user_right_top .tutor_services ul li {
   display: flex;
   align-items: end;
   justify-content: space-between;
 }
-.tutor_page .tutor_services ul li .doted {
+.tutor_page .tutor_page_user_right .tutor_user_right_top .tutor_services ul li .doted {
   width: 100%;
   border-bottom: 2px dotted;
   font-size: 36px;
@@ -1118,12 +1117,51 @@ header .header_media.active {
   line-height: 22px;
   color: #c7c7c7;
 }
-.tutor_page .tutor_services ul li span {
+.tutor_page .tutor_page_user_right .tutor_user_right_top .tutor_services ul li span {
   white-space: nowrap;
   color: rgb(0, 0, 0);
   font-size: 16px;
   font-weight: 400;
   line-height: 12px;
+}
+.tutor_page .tutor_page_user_right .tutor_page_list {
+  max-width: 768px;
+  margin: 60px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.tutor_page .tutor_page_user_right .tutor_page_list h6 {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.tutor_page .tutor_page_user_right .tutor_page_list li {
+  display: flex;
+  align-items: start;
+  gap: 5px;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+}
+.tutor_page .tutor_page_user_right .tutor_format {
+  margin-bottom: 60px;
+  max-width: 570px;
+}
+.tutor_page .tutor_page_user_right .tutor_format h6 {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 8px;
+}
+.tutor_page .tutor_page_user_right .tutor_format p {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
 }
 
 footer {
