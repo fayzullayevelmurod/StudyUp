@@ -1016,35 +1016,31 @@ header .header_media.active {
   margin-bottom: 60px;
 }
 .tutor_page .tutor_page_user_left {
-  width: 163px;
+  min-width: 163px;
   display: flex;
   flex-direction: column;
 }
-.tutor_page .tutor_page_user_left .tutor_page_user_btns {
-  margin-top: 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.tutor_page .tutor_page_user_left .tutor_page_user_btns a {
-  text-align: center;
-  border-radius: 7px;
-  padding: 12px;
+.tutor_page .tutor_page_user_left .user_img {
   width: 100%;
+}
+.tutor_page .tutor_page_user_mobile {
+  display: none;
+}
+.tutor_page .tutor_page_user_mobile h6 {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 8px;
+}
+.tutor_page .tutor_page_user_mobile p {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: rgb(140, 140, 140);
   font-size: 16px;
   font-weight: 400;
-  line-height: 18px;
-}
-.tutor_page .tutor_page_user_left .tutor_page_user_btns .phone_btn {
-  background: rgb(255, 140, 66);
-  color: rgb(255, 255, 255);
-}
-.tutor_page .tutor_page_user_left .tutor_page_user_btns .chat_phone {
-  color: rgb(0, 0, 0);
-  background: rgb(199, 199, 199);
-}
-.tutor_page .tutor_page_user_left img {
-  width: 100%;
+  line-height: 20px;
 }
 .tutor_page .tutor_page_user_right .tutor_user_right_top {
   max-width: 446px;
@@ -1163,6 +1159,9 @@ header .header_media.active {
   font-weight: 400;
   line-height: 25px;
 }
+.tutor_page .tutor_page_user_right .tutor_comment {
+  max-width: 828px;
+}
 .tutor_page .tutor_page_user_right .tutor_comment h6 {
   color: rgb(0, 0, 0);
   font-family: "Roboto", sans-serif;
@@ -1176,6 +1175,10 @@ header .header_media.active {
   display: flex;
   align-items: start;
   gap: 36px;
+  border-bottom: 2px solid rgb(223, 223, 223);
+}
+.tutor_page .tutor_page_user_right .tutor_comment .tutor_comment_block:last-child {
+  border: none;
 }
 .tutor_page .tutor_page_user_right .tutor_comment .tutor_comment_block_left {
   display: flex;
@@ -1203,6 +1206,107 @@ header .header_media.active {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
+}
+.tutor_page .tutor_page_user_btns {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.tutor_page .tutor_page_user_btns a {
+  text-align: center;
+  border-radius: 7px;
+  padding: 12px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.tutor_page .tutor_page_user_btns .phone_btn {
+  background: rgb(255, 140, 66);
+  color: rgb(255, 255, 255);
+}
+.tutor_page .tutor_page_user_btns .chat_phone {
+  color: rgb(0, 0, 0);
+  background: rgb(199, 199, 199);
+}
+.tutor_page .tutor_user_right_top {
+  max-width: 446px;
+}
+.tutor_page .tutor_user_right_top h6 {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 8px;
+}
+.tutor_page .tutor_user_right_top p {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: rgb(140, 140, 140);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 18px;
+}
+.tutor_page .tutor_user_right_top .tutor_services h4 {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+.tutor_page .tutor_user_right_top .tutor_services .tutor_anons {
+  margin-bottom: 13px;
+  padding: 13px 12px 8px;
+  border: 1px solid rgb(114, 135, 255);
+  border-radius: 7px;
+  position: relative;
+}
+.tutor_page .tutor_user_right_top .tutor_services .tutor_anons p {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+}
+.tutor_page .tutor_user_right_top .tutor_services .tutor_anons img {
+  position: absolute;
+  left: 12px;
+  top: -11px;
+}
+.tutor_page .tutor_user_right_top .tutor_services h5 {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+.tutor_page .tutor_user_right_top .tutor_services ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.tutor_page .tutor_user_right_top .tutor_services ul li {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+.tutor_page .tutor_user_right_top .tutor_services ul li .doted {
+  width: 100%;
+  border-bottom: 2px dotted;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #c7c7c7;
+}
+.tutor_page .tutor_user_right_top .tutor_services ul li span {
+  white-space: nowrap;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 12px;
 }
 
 footer {
@@ -2004,6 +2108,54 @@ footer .footer_left span {
   }
   .articles .articles_bottom .articles_bottom_right .articles_right_btn {
     width: 200px;
+  }
+  .tutor_page .tutor_page_user {
+    flex-direction: column;
+    gap: 28px;
+    margin-bottom: 50px;
+  }
+  .tutor_page .tutor_page_user_left {
+    width: 100%;
+    gap: 15px;
+    flex-direction: row;
+  }
+  .tutor_page .tutor_page_user_left .desktop_btns {
+    display: none;
+  }
+  .tutor_page .tutor_page_user_left .user_img {
+    width: 146px;
+  }
+  .tutor_page .tutor_page_user_left .tutor_page_user_mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .tutor_page .tutor_page_user_left .tutor_page_user_mobile h6 {
+    margin-bottom: 8px;
+  }
+  .tutor_page .tutor_page_user_left .tutor_page_user_mobile a {
+    padding: 8px;
+  }
+  .tutor_page .tutor_page_user_right .tutor_user_right_top h6,
+  .tutor_page .tutor_page_user_right .tutor_user_right_top p {
+    display: none;
+  }
+  .tutor_page .tutor_page_user_right .tutor_user_right_top .tutor_anons {
+    margin-bottom: 13px;
+  }
+  .tutor_page .tutor_page_user_right .tutor_user_right_top .tutor_anons p {
+    display: block;
+  }
+  .tutor_page .tutor_page_user_right .tutor_page_list {
+    margin: 50px 0;
+    gap: 20px;
+  }
+  .tutor_page .tutor_page_user_right .tutor_format {
+    margin-bottom: 50px;
+  }
+  .tutor_page .tutor_page_user_right .tutor_comment .tutor_comment_block {
+    gap: 20px;
   }
   footer .main_container {
     padding: 0 15px;

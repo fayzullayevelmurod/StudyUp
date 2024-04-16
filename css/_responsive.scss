@@ -1053,6 +1053,78 @@
         }
     }
 
+    .tutor_page {
+        .tutor_page_user {
+            flex-direction: column;
+            gap: 28px;
+            margin-bottom: 50px;
+        }
+
+        .tutor_page_user_left {
+            width: 100%;
+            gap: 15px;
+            flex-direction: row;
+
+            .desktop_btns {
+                display: none;
+            }
+
+            .user_img {
+                width: 146px;
+            }
+
+            .tutor_page_user_mobile {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                h6 {
+                    margin-bottom: 8px;
+                }
+
+                a {
+                    padding: 8px;
+                }
+
+            }
+        }
+
+        .tutor_page_user_right {
+
+            .tutor_user_right_top {
+
+                h6, 
+                p {
+                    display: none;
+                }
+
+                .tutor_anons {
+                    margin-bottom: 13px;
+                    p {
+                        display: block;
+                    }
+                }
+            }
+
+            .tutor_page_list {
+                margin: 50px 0;
+                gap: 20px;
+            }
+
+            .tutor_format {
+                margin-bottom: 50px;
+            }
+
+            .tutor_comment {
+                .tutor_comment_block {
+                    gap: 20px;
+                }
+            }
+        }
+        
+    }
+
     footer {
         .main_container {
             padding: 0 15px;
