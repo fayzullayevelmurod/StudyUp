@@ -1201,6 +1201,147 @@ header {
 }
 // articles
 
+// tutor_page
+.tutor_page {
+    .tutor_page_user {
+        @include flex-start();
+        gap: 15px;
+        margin-bottom: 60px;
+    }
+
+    .tutor_page_user_left {
+        width: 163px;
+        display: flex;
+        flex-direction: column;
+
+        .tutor_page_user_btns {
+            margin-top: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            a {
+                text-align: center;
+                border-radius: 7px;
+                padding: 12px;
+                width: 100%;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 18px;
+            }
+
+            .phone_btn {
+                background: rgb(255, 140, 66);
+                color: rgb(255, 255, 255);
+            }
+            
+            .chat_phone {
+                color: rgb(0, 0, 0);
+                background: rgb(199, 199, 199);
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+
+    }
+
+    .tutor_page_user_right {
+        width: 446px;
+        border: 1px solid red;
+        h6 {
+            color: rgb(0, 0, 0);
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 26px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            @include flex-center();
+            gap: 6px;
+            color: rgb(140, 140, 140);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            margin-bottom: 18px;
+            
+        }
+    }
+    
+    .tutor_services {
+
+        h4 {
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            margin-bottom: 20px;
+        }
+
+        .tutor_anons {
+            margin-bottom: 13px;
+            padding: 13px 12px 8px;
+            border: 1px solid rgb(114, 135, 255);
+            border-radius: 7px;
+            position: relative;
+
+            p {
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
+                margin: 0;
+            }
+
+            img {
+                position: absolute;
+                left: 12px;
+                top: -11px;
+            }
+        }
+
+        h5 {
+            color: rgb(0, 0, 0);
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 18px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            li {
+                display: flex;
+                align-items: end;
+                justify-content: space-between;
+
+                .doted {
+                    width: 100%;
+                    border-bottom: 2px dotted;
+                    font-size: 36px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    color: #C7C7C7FF;
+                }
+
+                span {
+                    white-space: nowrap;
+                    color: rgb(0, 0, 0);
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 12px;
+                }
+            }
+        }
+    }
+}
+// tutor_page
+
 // footer
 footer {
     position: relative;

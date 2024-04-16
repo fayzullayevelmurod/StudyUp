@@ -1009,6 +1009,123 @@ header .header_media.active {
   background: rgb(114, 135, 255);
 }
 
+.tutor_page .tutor_page_user {
+  display: flex;
+  align-items: start;
+  gap: 15px;
+  margin-bottom: 60px;
+}
+.tutor_page .tutor_page_user_left {
+  width: 163px;
+  display: flex;
+  flex-direction: column;
+}
+.tutor_page .tutor_page_user_left .tutor_page_user_btns {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.tutor_page .tutor_page_user_left .tutor_page_user_btns a {
+  text-align: center;
+  border-radius: 7px;
+  padding: 12px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.tutor_page .tutor_page_user_left .tutor_page_user_btns .phone_btn {
+  background: rgb(255, 140, 66);
+  color: rgb(255, 255, 255);
+}
+.tutor_page .tutor_page_user_left .tutor_page_user_btns .chat_phone {
+  color: rgb(0, 0, 0);
+  background: rgb(199, 199, 199);
+}
+.tutor_page .tutor_page_user_left img {
+  width: 100%;
+}
+.tutor_page .tutor_page_user_right {
+  width: 446px;
+  border: 1px solid red;
+}
+.tutor_page .tutor_page_user_right h6 {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 8px;
+}
+.tutor_page .tutor_page_user_right p {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: rgb(140, 140, 140);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 18px;
+}
+.tutor_page .tutor_services h4 {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+.tutor_page .tutor_services .tutor_anons {
+  margin-bottom: 13px;
+  padding: 13px 12px 8px;
+  border: 1px solid rgb(114, 135, 255);
+  border-radius: 7px;
+  position: relative;
+}
+.tutor_page .tutor_services .tutor_anons p {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+}
+.tutor_page .tutor_services .tutor_anons img {
+  position: absolute;
+  left: 12px;
+  top: -11px;
+}
+.tutor_page .tutor_services h5 {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+.tutor_page .tutor_services ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.tutor_page .tutor_services ul li {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+.tutor_page .tutor_services ul li .doted {
+  width: 100%;
+  border-bottom: 2px dotted;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #c7c7c7;
+}
+.tutor_page .tutor_services ul li span {
+  white-space: nowrap;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 12px;
+}
+
 footer {
   position: relative;
   z-index: 2;
