@@ -34,3 +34,28 @@ items.forEach((item) => {
 });
 // accardion
 
+
+var swiper = new Swiper(".teacherSwiper", {
+    navigation: {
+      nextEl: ".teacher-button-next",
+      prevEl: ".teacher-button-prev",
+    },
+    breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        650: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        993: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3.60,
+          spaceBetween: 68,
+        },
+    },
+});

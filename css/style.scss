@@ -1776,6 +1776,28 @@ header {
                     gap: 6px;
                 }
 
+                .tutor_card_media_btns {
+                    display: none;
+                    flex-direction: column;
+                    gap: 6px;
+
+                    .phone_btn {
+                        color: rgb(255, 255, 255);
+                        background: rgb(255, 140, 66);
+                    }
+                    
+                    a {
+                        text-align: center;
+                        padding: 8px;
+                        color: rgb(0, 0, 0);
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 18px;
+                        border-radius: 7px;
+                        background: rgb(223, 223, 223);
+                    }
+                }
+
                 p {
                     margin: 20px 0 15px;
                     font-size: 16px;
@@ -1886,6 +1908,98 @@ header {
     }
 }
 // tutor_catalog
+
+// teacher_slider
+.teacher_slider {
+    .teacher_slider_title {
+        margin-bottom: 45px;
+        @include flex-start();
+        gap: 20px;
+
+        h3 {
+            font-size: 42px;
+            font-weight: 400;
+            line-height: 52px;
+            color: rgb(0, 0, 0);
+
+            span {
+                color: rgb(255, 111, 54);
+            }
+        }
+
+        .slider_title_text {
+            padding: 20px 24px 26px;
+            @include flex-start();
+            gap: 10px;
+            border-radius: 15px;
+            box-shadow: 0px 20px 60px 0px rgba(168, 168, 168, 0.4);
+            background: rgb(255, 255, 255);
+
+            p {
+                color: rgb(140, 140, 140);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
+            }
+        }
+    }
+
+    .teacherSwiper {
+        margin-bottom: 90px;
+        display: flex;
+        align-items: center;
+
+        .teacher-button-prev,
+        .teacher-button-next {
+            display: none;
+            position: absolute;
+            z-index: 3;
+        }
+        
+        .teacher-button-prev {
+            left: 15px;
+        }
+
+        .teacher-button-next {
+            right: 15px;
+        }
+
+        .teacher_slider_card {
+            img {
+                padding: 0 12px;
+            }
+
+            h6 {
+                color: rgb(0, 0, 0);
+                font-size: 22px;
+                font-weight: 400;
+                line-height: 26px;
+                margin: 16px 0 7px;
+            }
+
+            span {
+                color: rgb(140, 140, 140);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
+                margin-bottom: 16px;
+            }
+
+            p {
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
+            }
+
+            .main_btn {
+                margin-top: 10px;
+                padding: 16px 22px;
+            }
+        }
+    }
+}
+// teacher_slider
 
 // footer
 footer {

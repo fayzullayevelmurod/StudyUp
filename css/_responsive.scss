@@ -256,6 +256,15 @@
             margin-bottom: 35px;
         }
     }
+
+    .teacher_slider {
+        .teacher_slider_title {
+            h3 {
+                font-size: 36px;
+                line-height: 47px;
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 993px) {
@@ -627,6 +636,28 @@
 
                 .tutor_card_right {
                     display: none;
+                }
+            }
+        }
+    }
+
+    .teacher_slider {
+        .teacher_slider_title {
+            flex-direction: column;
+            text-align: center;
+            gap: 40px;
+
+            .slider_title_text {
+                text-align: left;
+                margin: 0 auto;
+                max-width: 383px;
+            }
+        }
+
+        .teacherSwiper {
+            .teacher_slider_card {
+                img {
+                    width: 230px;
                 }
             }
         }
@@ -1182,21 +1213,147 @@
     }
 
     .tutor_catalog {
+
+        .tutor_catalog_title {
+            .tutor_catalog_btns {
+                display: none;
+            }
+
+            .media_filter_btn {
+                display: flex;
+            }
+        }
+
         .tutor_catalog_content {
             .tutor_catalog_cards {
 
                 .tutor_card {
-                    padding: 12px;
+                    gap: 12px;
+                    padding: 10px 11px;
                     flex-direction: column;
                 }
 
                 .tutor_card_left {
                     width: 100%;
                     display: flex;
+                    gap: 8px;
+
+                    .table_content {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        .tutor_table_top {
+                            display: block;
+
+                            span {
+                                @include flex-center;
+                                gap: 6px;
+                            }
+                        }
+
+                        .mobile_comment {
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                        }
+
+                        h6 {
+                            display: block;
+                        }
+    
+                        .tutor_card_btns {
+                            display: none;
+                        }
+                    }
 
                     .tutor_user_img {
                         min-width: 91px;
+                        width: 91px;
                     }
+                }
+
+                .tutor_card_text {
+                    .tutor_name {
+                        display: none;
+                    }
+
+                    span {
+                        display: none;
+                    }
+
+                    .tutor_card_media_btns {
+                        display: flex;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        line-height: 20px;
+                        margin: 12px 0;
+                    }
+                    
+                    ul {
+                        span {
+                            display: flex;
+                            font-size: 14px;
+                            line-height: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .teacher_slider {
+        .teacher_slider_title {
+            margin-bottom: 40px;
+            flex-direction: column;
+            gap: 40px;
+    
+            h3 {
+                font-size: 22px;
+                font-weight: 400;
+                line-height: 26px;
+                text-align: center;
+            }
+    
+            .slider_title_text {
+                padding: 20px;
+                @include flex-center();
+                gap: 15px;
+            }
+        }
+    
+        .teacherSwiper {
+            margin-bottom: 48px;
+    
+            .teacher-button-prev,
+            .teacher-button-next {
+                display: flex;
+            }
+
+            .teacher_slider_card {
+                text-align: center;
+
+                img {
+                    width: 175px;
+                }
+
+                h6 {
+                    margin: 20px 0 10px;
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+
+                span {
+                    font-size: 12px;
+                    line-height: 20px;
+                    margin-bottom: 8px;
+                }
+
+                p {
+                    text-align: left;
+                    font-size: 14px;
+                    line-height: 18px;
                 }
             }
         }

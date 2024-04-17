@@ -1493,6 +1493,25 @@ header .header_media.active {
   align-items: center;
   gap: 6px;
 }
+.tutor_catalog .tutor_catalog_content .tutor_catalog_cards .tutor_card_text .tutor_card_media_btns {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+}
+.tutor_catalog .tutor_catalog_content .tutor_catalog_cards .tutor_card_text .tutor_card_media_btns .phone_btn {
+  color: rgb(255, 255, 255);
+  background: rgb(255, 140, 66);
+}
+.tutor_catalog .tutor_catalog_content .tutor_catalog_cards .tutor_card_text .tutor_card_media_btns a {
+  text-align: center;
+  padding: 8px;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  border-radius: 7px;
+  background: rgb(223, 223, 223);
+}
 .tutor_catalog .tutor_catalog_content .tutor_catalog_cards .tutor_card_text p {
   margin: 20px 0 15px;
   font-size: 16px;
@@ -1582,6 +1601,81 @@ header .header_media.active {
   margin-left: 95px;
   margin-top: 45px;
   justify-content: start;
+}
+
+.teacher_slider .teacher_slider_title {
+  margin-bottom: 45px;
+  display: flex;
+  align-items: start;
+  gap: 20px;
+}
+.teacher_slider .teacher_slider_title h3 {
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 52px;
+  color: rgb(0, 0, 0);
+}
+.teacher_slider .teacher_slider_title h3 span {
+  color: rgb(255, 111, 54);
+}
+.teacher_slider .teacher_slider_title .slider_title_text {
+  padding: 20px 24px 26px;
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  border-radius: 15px;
+  box-shadow: 0px 20px 60px 0px rgba(168, 168, 168, 0.4);
+  background: rgb(255, 255, 255);
+}
+.teacher_slider .teacher_slider_title .slider_title_text p {
+  color: rgb(140, 140, 140);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.teacher_slider .teacherSwiper {
+  margin-bottom: 90px;
+  display: flex;
+  align-items: center;
+}
+.teacher_slider .teacherSwiper .teacher-button-prev,
+.teacher_slider .teacherSwiper .teacher-button-next {
+  display: none;
+  position: absolute;
+  z-index: 3;
+}
+.teacher_slider .teacherSwiper .teacher-button-prev {
+  left: 15px;
+}
+.teacher_slider .teacherSwiper .teacher-button-next {
+  right: 15px;
+}
+.teacher_slider .teacherSwiper .teacher_slider_card img {
+  padding: 0 12px;
+}
+.teacher_slider .teacherSwiper .teacher_slider_card h6 {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 16px 0 7px;
+}
+.teacher_slider .teacherSwiper .teacher_slider_card span {
+  color: rgb(140, 140, 140);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+.teacher_slider .teacherSwiper .teacher_slider_card p {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.teacher_slider .teacherSwiper .teacher_slider_card .main_btn {
+  margin-top: 10px;
+  padding: 16px 22px;
 }
 
 footer {
@@ -1817,6 +1911,10 @@ footer .footer_left span {
   .error .error_title {
     max-width: 572px;
     margin-bottom: 35px;
+  }
+  .teacher_slider .teacher_slider_title h3 {
+    font-size: 36px;
+    line-height: 47px;
   }
 }
 @media only screen and (min-width: 993px) {
@@ -2077,6 +2175,19 @@ footer .footer_left span {
   }
   .tutor_catalog .tutor_catalog_content .tutor_catalog_cards .tutor_card_right {
     display: none;
+  }
+  .teacher_slider .teacher_slider_title {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+  .teacher_slider .teacher_slider_title .slider_title_text {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 383px;
+  }
+  .teacher_slider .teacherSwiper .teacher_slider_card img {
+    width: 230px;
   }
   footer .main_container {
     flex-wrap: wrap;
@@ -2464,16 +2575,113 @@ footer .footer_left span {
   .tutor_page .tutor_page_user_right .tutor_comment .tutor_comment_block {
     gap: 20px;
   }
+  .tutor_catalog .tutor_catalog_title .tutor_catalog_btns {
+    display: none;
+  }
+  .tutor_catalog .tutor_catalog_title .media_filter_btn {
+    display: flex;
+  }
   .tutor_catalog .tutor_catalog_content .tutor_catalog_cards .tutor_card {
-    padding: 12px;
+    gap: 12px;
+    padding: 10px 11px;
     flex-direction: column;
   }
   .tutor_catalog .tutor_catalog_content .tutor_catalog_cards .tutor_card_left {
     width: 100%;
     display: flex;
+    gap: 8px;
+  }
+  .tutor_catalog .tutor_catalog_content .tutor_catalog_cards .tutor_card_left .table_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .tutor_catalog .tutor_catalog_content .tutor_catalog_cards .tutor_card_left .table_content .tutor_table_top {
+    display: block;
+  }
+  .tutor_catalog .tutor_catalog_content .tutor_catalog_cards .tutor_card_left .table_content .tutor_table_top span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .tutor_catalog .tutor_catalog_content .tutor_catalog_cards .tutor_card_left .table_content .mobile_comment {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .tutor_catalog .tutor_catalog_content .tutor_catalog_cards .tutor_card_left .table_content h6 {
+    display: block;
+  }
+  .tutor_catalog .tutor_catalog_content .tutor_catalog_cards .tutor_card_left .table_content .tutor_card_btns {
+    display: none;
   }
   .tutor_catalog .tutor_catalog_content .tutor_catalog_cards .tutor_card_left .tutor_user_img {
     min-width: 91px;
+    width: 91px;
+  }
+  .tutor_catalog .tutor_catalog_content .tutor_catalog_cards .tutor_card_text .tutor_name {
+    display: none;
+  }
+  .tutor_catalog .tutor_catalog_content .tutor_catalog_cards .tutor_card_text span {
+    display: none;
+  }
+  .tutor_catalog .tutor_catalog_content .tutor_catalog_cards .tutor_card_text .tutor_card_media_btns {
+    display: flex;
+  }
+  .tutor_catalog .tutor_catalog_content .tutor_catalog_cards .tutor_card_text p {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 12px 0;
+  }
+  .tutor_catalog .tutor_catalog_content .tutor_catalog_cards .tutor_card_text ul span {
+    display: flex;
+    font-size: 14px;
+    line-height: 12px;
+  }
+  .teacher_slider .teacher_slider_title {
+    margin-bottom: 40px;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .teacher_slider .teacher_slider_title h3 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+  }
+  .teacher_slider .teacher_slider_title .slider_title_text {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .teacher_slider .teacherSwiper {
+    margin-bottom: 48px;
+  }
+  .teacher_slider .teacherSwiper .teacher-button-prev,
+  .teacher_slider .teacherSwiper .teacher-button-next {
+    display: flex;
+  }
+  .teacher_slider .teacherSwiper .teacher_slider_card {
+    text-align: center;
+  }
+  .teacher_slider .teacherSwiper .teacher_slider_card img {
+    width: 175px;
+  }
+  .teacher_slider .teacherSwiper .teacher_slider_card h6 {
+    margin: 20px 0 10px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .teacher_slider .teacherSwiper .teacher_slider_card span {
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 8px;
+  }
+  .teacher_slider .teacherSwiper .teacher_slider_card p {
+    text-align: left;
+    font-size: 14px;
+    line-height: 18px;
   }
   footer .main_container {
     padding: 0 15px;
