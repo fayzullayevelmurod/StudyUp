@@ -1226,6 +1226,7 @@
 
         .tutor_catalog_content {
             .tutor_catalog_cards {
+                gap: 20px;
 
                 .tutor_card {
                     gap: 12px;
@@ -1242,13 +1243,23 @@
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
+
                         .tutor_table_top {
                             display: block;
 
                             span {
                                 @include flex-center;
                                 gap: 6px;
+
+                                img {
+                                    width: 12px;
+                                }
                             }
+                        }
+
+                        .comment_link {
+                            font-size: 14px;
+                            line-height: 18px;
                         }
 
                         .mobile_comment {

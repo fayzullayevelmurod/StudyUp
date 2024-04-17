@@ -1645,6 +1645,10 @@ header {
         }
 
         .tutor_catalog_cards {
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+            
             .tutor_card {
                 @include flex-start();
                 gap: 18px;

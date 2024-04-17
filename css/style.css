@@ -1380,6 +1380,11 @@ header .header_media.active {
 .tutor_catalog .tutor_catalog_content .tutor_catalog_form .main_form {
   width: 330px;
 }
+.tutor_catalog .tutor_catalog_content .tutor_catalog_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
 .tutor_catalog .tutor_catalog_content .tutor_catalog_cards .tutor_card {
   display: flex;
   align-items: start;
@@ -2581,6 +2586,9 @@ footer .footer_left span {
   .tutor_catalog .tutor_catalog_title .media_filter_btn {
     display: flex;
   }
+  .tutor_catalog .tutor_catalog_content .tutor_catalog_cards {
+    gap: 20px;
+  }
   .tutor_catalog .tutor_catalog_content .tutor_catalog_cards .tutor_card {
     gap: 12px;
     padding: 10px 11px;
@@ -2603,6 +2611,13 @@ footer .footer_left span {
     display: flex;
     align-items: center;
     gap: 6px;
+  }
+  .tutor_catalog .tutor_catalog_content .tutor_catalog_cards .tutor_card_left .table_content .tutor_table_top span img {
+    width: 12px;
+  }
+  .tutor_catalog .tutor_catalog_content .tutor_catalog_cards .tutor_card_left .table_content .comment_link {
+    font-size: 14px;
+    line-height: 18px;
   }
   .tutor_catalog .tutor_catalog_content .tutor_catalog_cards .tutor_card_left .table_content .mobile_comment {
     display: flex;
