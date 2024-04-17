@@ -1640,12 +1640,111 @@ header {
             }
 
             .tutor_card_left {
-                img {
+                .tutor_user_img {
                     min-width: 143px;
+                }
+
+                .table_content {
+                    display: none;
+
+                    .tutor_table_top {
+                        display: none;
+                        h5 {
+                            color: rgb(0, 0, 0);
+                            font-size: 15px;
+                            font-weight: 400;
+                            line-height: 18px;
+                        }
+
+                        span {
+                            color: rgb(140, 140, 140);
+                            font-size: 12px;
+                            font-weight: 400;
+                            line-height: 20px;
+                        }
+                    }
+
+                    h6 {
+                        display: none;
+                        color: rgb(0, 0, 0);
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 20px;
+    
+                        span {
+                            font-size: 18px;
+                            line-height: 18px;
+                        }
+                    }
+    
+                    .star {
+                        color: rgb(0, 0, 0);
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 20px;
+                        margin: 6px 0;
+                    }
+    
+                    .comment_link {
+                        color: rgb(107, 107, 107);
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 20px;
+                        text-decoration-line: underline;
+                    }
+    
+                    .tutor_card_btns {
+                        margin-top: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 6px;
+    
+                        a {
+                            padding: 8px;
+                            text-align: center;
+                            color: rgb(0, 0, 0);
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 18px;
+                            border-radius: 7px;
+                            background: rgb(223, 223, 223);
+                        }
+    
+                        .phone_btn {
+                            color: rgb(255, 255, 255);
+                            border-radius: 7px;
+                            background: rgb(255, 140, 66);
+                        }
+                    }
                 }
             }
 
             .tutor_card_text {
+
+                .tutor_name {
+                    @include flex-center();
+                    gap: 20px;
+
+                    h6 {
+                        display: none;
+                        align-items: center;
+                        color: rgb(0, 0, 0);
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 20px;
+    
+                        span {
+                            font-size: 20px;
+                            line-height: 18px;
+                        }
+                    }
+                }
+
+                span {
+                    @include flex-center();
+                    gap: 6px;
+                }
+
                 h5 {
                     color: rgb(0, 0, 0);
                     font-size: 22px;
@@ -1765,6 +1864,7 @@ header {
             }
 
             .pagination {
+                margin-left: 95px;
                 margin-top: 45px;
                 justify-content: start;
             }

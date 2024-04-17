@@ -215,6 +215,25 @@
         }
     }
 
+    .tutor_catalog {
+        .tutor_catalog_form {
+            display: none;
+        }
+
+        .tutor_catalog_content {
+            .tutor_catalog_cards {
+                max-width: 829px;
+                margin: 0 auto;
+                
+                .pagination {
+                    justify-content: center;
+                    margin-left: 0;
+                }
+            }
+        }
+
+    }
+
     .error {
         padding: 53px 0 132px 0;
         
@@ -572,6 +591,43 @@
 
             .articles_bottom_card {
                 width: 100%;
+            }
+        }
+    }
+
+    .tutor_catalog {
+        .tutor_catalog_content {
+            .tutor_catalog_cards {
+
+                .tutor_card {
+                    padding: 12px;
+                }
+
+                .tutor_card_left {
+                    .table_content {
+                        display: block;
+                    }
+
+                    .tutor_user_img {
+                        min-width: 111px;
+                    }
+                }
+
+                .tutor_card_text  {
+                    .tutor_name  {
+                        @include flex-center;
+                        justify-content: space-between;
+
+                        h6 {
+                            white-space: nowrap;
+                            display: flex;
+                        }
+                    }
+                }
+
+                .tutor_card_right {
+                    display: none;
+                }
             }
         }
     }
@@ -1123,6 +1179,27 @@
             }
         }
         
+    }
+
+    .tutor_catalog {
+        .tutor_catalog_content {
+            .tutor_catalog_cards {
+
+                .tutor_card {
+                    padding: 12px;
+                    flex-direction: column;
+                }
+
+                .tutor_card_left {
+                    width: 100%;
+                    display: flex;
+
+                    .tutor_user_img {
+                        min-width: 91px;
+                    }
+                }
+            }
+        }
     }
 
     footer {
