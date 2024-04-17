@@ -160,6 +160,33 @@ label {
   line-height: 18px;
 }
 
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 90px;
+}
+.pagination button {
+  width: 32px;
+  height: 32px;
+  border-radius: 7px;
+  background: rgb(223, 223, 223);
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  transition: 0.2s ease;
+}
+.pagination button:hover {
+  color: #fff;
+  background: rgb(255, 140, 66);
+}
+.pagination button.active {
+  color: #fff;
+  background: rgb(255, 140, 66);
+}
+
 header {
   padding: 15px 0;
 }
@@ -863,32 +890,6 @@ header .header_media.active {
   font-weight: 400;
   line-height: 18px;
 }
-.articles .pagination {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 90px;
-}
-.articles .pagination button {
-  width: 32px;
-  height: 32px;
-  border-radius: 7px;
-  background: rgb(223, 223, 223);
-  color: rgb(0, 0, 0);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  transition: 0.2s ease;
-}
-.articles .pagination button:hover {
-  color: #fff;
-  background: rgb(255, 140, 66);
-}
-.articles .pagination button.active {
-  color: #fff;
-  background: rgb(255, 140, 66);
-}
 .articles .articles_bottom {
   margin-bottom: 45px;
   display: flex;
@@ -1307,6 +1308,56 @@ header .header_media.active {
   font-size: 16px;
   font-weight: 400;
   line-height: 12px;
+}
+
+.tutor_catalog .tutor_catalog_title {
+  margin-bottom: 45px;
+}
+.tutor_catalog .tutor_catalog_title h3 {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35px;
+  margin-bottom: 24px;
+}
+.tutor_catalog .tutor_catalog_title p {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 24px;
+}
+.tutor_catalog .tutor_catalog_title .tutor_catalog_btns {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.tutor_catalog .tutor_catalog_title .tutor_catalog_btns button {
+  padding: 10px 22px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border-radius: 7px;
+  background: rgb(223, 223, 223);
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  transition: 0.2s ease;
+}
+.tutor_catalog .tutor_catalog_title .tutor_catalog_btns button:hover {
+  color: rgb(255, 255, 255);
+  background: rgb(117, 131, 255);
+}
+.tutor_catalog .tutor_catalog_title .tutor_catalog_btns button:hover svg path {
+  fill: rgb(255, 255, 255);
+}
+.tutor_catalog .tutor_catalog_title .tutor_catalog_btns button.active {
+  color: rgb(255, 255, 255);
+  background: rgb(117, 131, 255);
+}
+.tutor_catalog .tutor_catalog_title .tutor_catalog_btns button.active svg path {
+  fill: rgb(255, 255, 255);
 }
 
 footer {
@@ -1807,6 +1858,9 @@ footer .footer_left span {
   .main_container {
     padding: 0 15px;
   }
+  .pagination {
+    margin-bottom: 80px;
+  }
   .main_title {
     font-size: 22px;
     line-height: 26px;
@@ -2073,9 +2127,6 @@ footer .footer_left span {
   .articles .articles_cards .articles_card .article_date span {
     font-size: 12px;
     line-height: 20px;
-  }
-  .articles .pagination {
-    margin-bottom: 80px;
   }
   .articles .articles_bottom .articles_bottom_left {
     padding: 30px 20px 20px 30px;
