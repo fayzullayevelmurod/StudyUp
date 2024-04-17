@@ -1648,7 +1648,7 @@ header {
             display: flex;
             flex-direction: column;
             gap: 28px;
-            
+
             .tutor_card {
                 @include flex-start();
                 gap: 18px;
@@ -2004,6 +2004,97 @@ header {
     }
 }
 // teacher_slider
+
+// about
+.about {
+    .main_container {
+        display: flex;
+        gap: 42px;
+    }
+
+    .about_card {
+        max-width: 206px;
+        padding: 42px 27px 20px;
+        border: 1px solid rgb(224, 230, 237);
+        border-radius: 15px;
+
+        h6 {
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            margin: 18px 0 12px;
+        }
+
+        p {
+            color: rgb(140, 140, 140);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+        }
+    }
+
+    .active {
+        background: rgb(42, 43, 66);
+
+        h6 {
+            color: rgb(255, 255, 255);
+        }
+
+        p {
+            color: rgb(199, 199, 199);
+        }
+    }
+
+    .about_relative {
+        position: relative;
+
+        .about_absolute {
+            position: absolute;
+            top: -11px;
+            right: -40px;
+        }
+    }
+}
+// about
+
+// about_form
+.about_form {
+    margin-bottom: 64px;
+    
+    form {
+        margin: 50px 0 28px;
+        @include flex-center();
+        gap: 33px;
+        justify-content: space-between;
+    }
+
+    input {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid rgb(0, 0, 0);
+        color: rgb(140, 140, 140);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        padding-bottom: 12px;
+    }
+
+    .main_btn {
+        white-space: nowrap;
+        padding: 16px;
+    }
+
+    a {
+        @include flex-full-center();
+        color: rgb(0, 0, 0);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
+    }
+}
+// about_form
 
 // footer
 footer {
