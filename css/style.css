@@ -1655,6 +1655,12 @@ header .header_media.active {
 .teacher_slider .teacherSwiper .teacher-button-next {
   right: 15px;
 }
+.teacher_slider .teacherSwiper .teacher_slider_card {
+  width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
 .teacher_slider .teacherSwiper .teacher_slider_card img {
   padding: 0 12px;
 }
@@ -1721,6 +1727,7 @@ header .header_media.active {
 .about .about_relative .about_absolute {
   position: absolute;
   top: -11px;
+  width: 134px;
   right: -40px;
 }
 
@@ -1997,6 +2004,28 @@ footer .footer_left span {
     font-size: 36px;
     line-height: 47px;
   }
+  .about .main_container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 60px;
+  }
+  .about .about_card {
+    max-width: 100%;
+    width: calc(33.3333333333% - 40px);
+  }
+  .about .about_relative .about_absolute {
+    top: -21px;
+    right: -36px;
+  }
+  .about_form form {
+    gap: 77px;
+  }
+  .about_form input {
+    font-size: 14px;
+  }
+  .about_form .main_btn {
+    font-size: 16px;
+  }
 }
 @media only screen and (min-width: 993px) {
   header .header_media {
@@ -2270,6 +2299,22 @@ footer .footer_left span {
   .teacher_slider .teacherSwiper .teacher_slider_card img {
     width: 230px;
   }
+  .about_form form {
+    margin: 40px 0 16px;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .about_form .main_btn {
+    font-size: 17px;
+    padding: 16px;
+    width: 100%;
+  }
+  .about .main_container {
+    gap: 40px 20px;
+  }
+  .about .about_card {
+    padding: 24px 17px 26px;
+  }
   footer .main_container {
     flex-wrap: wrap;
     justify-content: center;
@@ -2292,6 +2337,27 @@ footer .footer_left span {
   }
   footer .main_container .footer_network {
     order: 3;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .about .main_container {
+    flex-direction: column;
+    gap: 28px;
+  }
+  .about .about_card {
+    text-align: center;
+    width: 100%;
+  }
+  .about .about_card h6 {
+    font-size: 16px;
+    margin: 15px 0 12px;
+  }
+  .about .about_card p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .about .about_relative .about_absolute {
+    display: none;
   }
 }
 @media only screen and (max-width: 750px) {

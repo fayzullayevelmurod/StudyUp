@@ -265,6 +265,40 @@
             }
         }
     }
+
+    .about {
+        .main_container {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px 60px;
+        }
+
+        .about_card {
+            max-width: 100%;
+            width: calc(100% / 3 - 40px);
+        }
+
+        .about_relative {
+            .about_absolute {
+                top: -21px;
+                right: -36px;
+            }
+        }
+    }
+
+    .about_form {
+        form {
+            gap: 77px;
+        }
+
+        input {
+            font-size: 14px;
+        }
+
+        .main_btn {
+            font-size: 16px;
+        }
+    }
 }
 
 @media only screen and (min-width: 993px) {
@@ -663,6 +697,30 @@
         }
     }
 
+    .about_form {
+        form {
+            margin: 40px 0 16px;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .main_btn {
+            font-size: 17px;
+            padding: 16px;
+            width: 100%;
+        }
+    }
+
+    .about {
+        .main_container {
+            gap: 40px 20px;
+        }
+
+        .about_card {
+            padding: 24px 17px 26px;
+        }
+    }
+
     footer {
         .main_container {
             flex-wrap: wrap;
@@ -697,6 +755,36 @@
     }
 }
 
+@media only screen and (max-width: 850px) {
+    .about {
+        .main_container {
+            flex-direction: column;
+            gap: 28px;
+        }
+
+        .about_card {
+            text-align: center;
+            width: 100%;
+
+            h6 {
+                font-size: 16px;
+                margin: 15px 0 12px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+
+        .about_relative {
+            .about_absolute {
+                display: none;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 750px) {
     .contact_head {
         .contact_head_in {
@@ -707,6 +795,8 @@
             max-width: 250px;
         }
     }
+
+
 }
 
 @media only screen and (max-width: 650px) {

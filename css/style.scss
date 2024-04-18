@@ -1969,6 +1969,8 @@ header {
         }
 
         .teacher_slider_card {
+            width: 100%;
+            user-select: none;
             img {
                 padding: 0 12px;
             }
@@ -2052,6 +2054,7 @@ header {
         .about_absolute {
             position: absolute;
             top: -11px;
+            width: 134px;
             right: -40px;
         }
     }
