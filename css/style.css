@@ -1797,6 +1797,41 @@ header .header_media.active {
   font-weight: 400;
   line-height: 22px;
 }
+.homework_help .homework_help_top {
+  padding: 18px;
+  border-radius: 15px;
+  box-shadow: 0px 20px 60px 0px rgba(168, 168, 168, 0.4);
+  background: rgb(255, 255, 255);
+}
+.homework_help .homework_help_bottom {
+  position: relative;
+  z-index: -1;
+  top: -20px;
+  padding: 33px 17px 17px 17px;
+  border-radius: 0px 0px 15px 15px;
+  box-shadow: 0px 20px 60px 0px rgba(168, 168, 168, 0.4);
+  background: rgb(255, 255, 255);
+}
+.homework_help .homework_help_bottom h4 {
+  display: flex;
+  align-items: center;
+  color: rgb(15, 69, 69);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.homework_help .homework_help_bottom p {
+  margin: 0;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.homework_help .homework_help_card_center {
+  box-shadow: none;
+  background: none;
+  padding: 0;
+}
 .homework_help .homework_card_tarif {
   display: flex;
   align-items: center;
@@ -1818,6 +1853,14 @@ header .header_media.active {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+}
+.homework_help .homework_card_relative {
+  position: relative;
+}
+.homework_help .homework_card_relative .homework_card_img {
+  position: absolute;
+  bottom: 54px;
+  right: -14px;
 }
 
 footer {
