@@ -299,6 +299,58 @@
             font-size: 16px;
         }
     }
+
+    .homework_help {
+        .homework_help_cards {
+            gap: 22px;
+        }
+
+        .homework_help_top {
+            padding: 14px;
+        }
+
+        .homework_help_card_center {
+            padding: 0 !important;
+        }
+
+        .homework_help_card {
+            padding: 14px;
+
+            h6 {
+                font-size: 22px;
+            }
+
+            p {
+                margin: 23px 0 14px;
+                font-size: 16px;
+            }
+        }
+
+        .homework_help_bottom {
+            p {
+                font-size: 14px;
+                margin: 0;
+            }
+        }
+
+        .homework_card_relative {
+            .homework_card_img {
+                bottom: 44px;
+                width: 65px;
+            }
+        }
+
+        .homework_card_tarif  {
+            span {
+                padding: 4px 16px;
+                font-size: 12px;
+            }
+
+            h5 {
+                font-size: 12px;
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 993px) {
@@ -721,6 +773,41 @@
         }
     }
 
+    .homework_help {
+
+        .main_title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .homework_help_cards {
+            flex-direction: column;
+            gap: 28px;
+        }
+
+        .homework_help_card {
+            h6 {
+                text-align: center;
+            }
+
+            p {
+                margin: 16px 0 20px 0;
+            }
+        }
+
+        .homework_help_card_center {
+            transform: translateY(0);
+        }
+
+        .homework_card_relative {
+            .homework_card_img {
+                bottom: -22px;
+                right: -10px;
+            }
+        }
+    }
+
     footer {
         .main_container {
             flex-wrap: wrap;
@@ -795,7 +882,6 @@
             max-width: 250px;
         }
     }
-
 
 }
 
@@ -1456,6 +1542,38 @@
                     font-size: 14px;
                     line-height: 18px;
                 }
+            }
+        }
+    }
+
+    .homework_help {
+
+        .main_title {
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 26px;
+        }
+
+        .homework_card_relative {
+            p {
+                padding-right: 68px;
+            }
+
+            .homework_card_tarif {
+                padding-right: 66px;
+            }
+
+            .homework_card_img {
+                width: 45px;
+                right: 30px;
+                bottom: 45px;
+            }
+        }
+
+        .homework_help_card {
+            h6 {
+                font-size: 20px;
+                line-height: 22px;
             }
         }
     }
