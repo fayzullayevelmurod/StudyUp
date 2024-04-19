@@ -2099,6 +2099,69 @@ header {
 }
 // about_form
 
+// homework_help
+.homework_help {
+    margin-bottom: 90px;
+    
+    .main_title {
+        max-width: 827px;
+        margin-bottom: 20px;
+    }
+
+    .homework_help_cards {
+        display: flex;
+        align-items: center;
+        gap: 42px;
+    }
+
+    .homework_help_card {
+        padding: 18px;
+        border-radius: 15px;
+        box-shadow: 0px 20px 60px 0px rgba(168, 168, 168, 0.4);
+        background: rgb(255, 255, 255);
+
+        h6 {
+            color: rgb(0, 0, 0);
+            font-size: 27px;
+            font-weight: 400;
+            line-height: 32px;
+        }
+
+        p {
+            margin: 18px 0 24px;
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+        }
+    }
+
+    .homework_card_tarif {
+        @include flex-center();
+        gap: 10px 12px;
+        flex-wrap: wrap;
+
+        span {
+            padding: 6px 12px;
+            color: rgb(0, 0, 0);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            border-radius: 50px;
+            box-shadow: 0px 1px 9px 1px rgba(196, 196, 196, 0.3);
+            background: rgb(255, 225, 201);
+        }
+
+        h5 {
+            color: rgb(0, 0, 0);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+        }
+    }
+}
+// homework_help
+
 // footer
 footer {
     position: relative;
