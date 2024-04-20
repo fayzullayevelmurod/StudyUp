@@ -509,9 +509,10 @@ header {
             color: rgb(0, 0, 0);
             font-size: 12px;
             font-weight: 400;
-            line-height: 20px;
+            line-height: 15px;
             margin-top: 5px;
             text-align: center;
+
             a {
                 border-bottom: 1px solid;
             }
@@ -2353,6 +2354,123 @@ header {
     }
 }
 // parents
+
+// exam_help
+.exam_help {
+    margin-bottom: 90px;
+
+    .main_title {
+        max-width: 666px;
+        margin: 0 auto 45px auto;
+        span {
+            color: rgb(255, 111, 54);
+        }
+    }
+
+    .exam_help_in {
+        display: flex;
+        gap: 40px;
+        justify-content: space-between;
+    }
+
+    .exam_help_left {
+        display: flex;
+        flex-direction: column;
+        gap: 55px;
+
+        li {
+            max-width: 430px;
+            display: flex;
+            align-items: start;
+            gap: 20px;
+        }
+
+        h6 {
+            color: rgb(0, 0, 0);
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 26px;
+            margin-bottom: 4px;
+
+            img {
+                width: 40px;
+                height: 40px;
+                display: none;
+            }
+        }
+
+        p {
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+        }
+    }
+
+    .exam_help_right {
+        display: flex;
+        align-items: stretch;
+        gap: 20px;
+    }
+
+    .exam_help_right_blocks {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .exam_help_right_block {
+        max-width: 322px;
+        padding: 16px 24px 28px 24px;
+        border-radius: 15px;
+        box-shadow: 0px 20px 60px 0px rgba(168, 168, 168, 0.4);
+        background: rgb(255, 255, 255);
+
+        h6 {
+            color: rgb(0, 0, 0);
+            font-size: 27px;
+            font-weight: 400;
+            line-height: 32px;
+            margin-bottom: 4px;
+        }
+
+        p {
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+        }
+    }
+
+    .partners {
+        padding: 16px;
+        border-radius: 15px;
+        box-shadow: 0px 20px 60px 0px rgba(168, 168, 168, 0.4);
+        background: rgb(255, 255, 255);
+
+        h5 {
+            color: rgb(0, 0, 0);
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 26px;
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
+// exam_help
+
+// classes
+.classes {
+    .main_title {
+        text-align: center;
+        margin-bottom: 45px;
+    }
+}
+// classes
 
 // footer
 footer {

@@ -415,6 +415,53 @@
             }
         }
     }
+
+    .exam_help {
+        .exam_help_left {
+            gap: 60px;
+
+            li {
+                max-width: 320px;
+            }
+
+            h6 {
+                font-size: 18px;
+                line-height: 22px;
+                margin-bottom: 8px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+
+        .exam_help_right_block {
+            max-width: 250px;
+            padding: 10px 15px;
+
+            h6 {
+                font-size: 36px;
+                line-height: 47px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+
+        .partners {
+            max-width: 280px;
+
+            h5 {
+                font-size: 18px;
+                line-height: 22px;
+                margin-bottom: 10px;
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 993px) {
@@ -905,6 +952,39 @@
             .five {
                 max-width: 100%;
             }
+        }
+    }
+
+    .exam_help {
+
+        .main_title {
+            margin-bottom: 40px;
+        }
+
+        .exam_help_in {
+            flex-direction: column;
+        }
+
+        .exam_help_left {
+            gap: 24px;
+
+            li {
+                max-width: 100%;
+            }
+        }
+
+        .exam_help_right_block {
+            max-width: 275px;
+
+            h6 {
+                font-size: 22px;
+                line-height: 26px;
+                margin-bottom: 10px;
+            }
+        }
+
+        .exam_help_right {
+            gap: 45px;
         }
     }
 
@@ -1647,6 +1727,7 @@
     }
 
     .homework_help {
+        margin-bottom: 70px;
 
         .main_title {
             font-size: 22px;
@@ -1737,6 +1818,67 @@
             gap: 24px;
             a {
                 font-size: 14px;
+            }
+        }
+    }
+
+    .exam_help {
+        margin-bottom: 70px;
+
+        .main_title {
+            margin-bottom: 70px;
+        }
+
+        .exam_help_left {
+
+            li {
+                img {
+                    display: none;
+                }
+            }
+
+            h6 {
+                @include flex-center;
+                gap: 15px;
+
+                img {
+                    display: block;
+                }
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+
+        .exam_help_right {
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .exam_help_right_blocks {
+            gap: 28px;
+
+            .exam_help_right_block {
+                max-width: 100%;
+
+                p {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        .partners  {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 100%;
+
+            img {
+                max-width: 227px;
             }
         }
     }
