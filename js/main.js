@@ -54,7 +54,7 @@ var swiper = new Swiper(".teacherSwiper", {
           spaceBetween: 20,
         },
         1024: {
-          slidesPerView: 3.60,
+          slidesPerView: 4,
           spaceBetween: 68,
         },
     },

@@ -1864,6 +1864,122 @@ header .header_media.active {
   right: -14px;
 }
 
+.parents {
+  margin-bottom: 90px;
+}
+.parents .parents_title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+.parents .parents_title .main_title {
+  margin-bottom: 24px;
+}
+.parents .parents_title h4 {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.parents .parents_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.parents .parent_cards_top {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+.parents .parent_cards_bottom {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+.parents .parents_card {
+  width: calc(auto / 3);
+  border-radius: 15px;
+  box-shadow: 0px 20px 60px 0px rgba(168, 168, 168, 0.4);
+  background: rgb(255, 255, 255);
+  padding: 16px 20px;
+}
+.parents .parents_card p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: rgb(0, 0, 0);
+}
+.parents .parents_card p a {
+  color: rgb(255, 111, 54);
+}
+.parents .parents_card .parents_card_user {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.parents .parents_card .parents_card_user span {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.parents .three_card {
+  position: relative;
+  border: 7px solid rgb(255, 255, 255);
+  border-radius: 15px;
+  box-shadow: 0px 20px 60px 0px rgba(168, 168, 168, 0.4);
+  background: rgb(255, 237, 189);
+}
+.parents .three_card h6 {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.parents .three_card .parents_img {
+  position: absolute;
+  bottom: 21px;
+  right: -30px;
+}
+.parents .one {
+  max-width: 399px;
+}
+.parents .two {
+  max-width: 342px;
+}
+.parents .three {
+  max-width: 364px;
+}
+.parents .four {
+  max-width: 395px;
+}
+.parents .five {
+  max-width: 385px;
+}
+.parents .six {
+  max-width: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.parents .six a {
+  color: rgb(255, 111, 54);
+}
+.parents .parents_cards_table {
+  display: none;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.parents .parents_cards_table .parents_card {
+  width: calc(50% - 10px);
+}
+.parents .parents_cards_table .five {
+  flex: 2;
+}
+.parents .parents_cards_table .six {
+  flex: 1;
+}
+
 footer {
   position: relative;
   z-index: 2;
@@ -1922,6 +2038,50 @@ footer .footer_left span {
   line-height: 30px;
 }
 
+@media only screen and (max-width: 1235px) {
+  .parents .parents_cards {
+    gap: 32px;
+  }
+  .parents .parents_card p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .parents .parents_card .parents_card_user span {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .parents .parent_cards_top {
+    gap: 25px;
+  }
+  .parents .parent_cards_bottom {
+    gap: 46px;
+  }
+  .parents .three_card h6 {
+    padding-right: 20px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .parents .three_card .parents_img {
+    bottom: 0;
+    right: 12px;
+    bottom: 2px;
+  }
+  .parents .one {
+    max-width: 333px;
+  }
+  .parents .two {
+    max-width: 302px;
+  }
+  .parents .three {
+    max-width: 274px;
+  }
+  .parents .four {
+    max-width: 340px;
+  }
+  .parents .five {
+    max-width: 340px;
+  }
+}
 @media only screen and (max-width: 1200px) {
   .main_title {
     font-size: 36px;
@@ -2469,6 +2629,33 @@ footer .footer_left span {
     bottom: -22px;
     right: -10px;
   }
+  .parents {
+    margin-bottom: 70px;
+  }
+  .parents .parents_title .main_title {
+    margin-bottom: 12px;
+    font-size: 36px;
+    line-height: 47px;
+  }
+  .parents .parents_title h4 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .parents .parents_cards {
+    display: none;
+  }
+  .parents .parents_cards_table {
+    display: flex;
+  }
+  .parents .parents_cards_table .one,
+  .parents .parents_cards_table .two,
+  .parents .parents_cards_table .three,
+  .parents .parents_cards_table .four {
+    max-width: 100%;
+  }
+  .parents .parents_cards_table .five {
+    max-width: 100%;
+  }
   footer .main_container {
     flex-wrap: wrap;
     justify-content: center;
@@ -3013,6 +3200,52 @@ footer .footer_left span {
   .homework_help .homework_help_card h6 {
     font-size: 20px;
     line-height: 22px;
+  }
+  .homework_help .homework_help_card .homework_help_bottom p {
+    margin: 0;
+  }
+  .parents .parents_title .main_title {
+    margin-bottom: 16px;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .parents .parents_title h4 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .parents .parents_cards_table {
+    flex-direction: column;
+    gap: 28px;
+  }
+  .parents .parents_cards_table .one,
+  .parents .parents_cards_table .two,
+  .parents .parents_cards_table .three,
+  .parents .parents_cards_table .four,
+  .parents .parents_cards_table .five,
+  .parents .parents_cards_table .six {
+    max-width: 100%;
+    width: 100%;
+  }
+  .parents .parents_card {
+    padding: 12px 16px;
+  }
+  .parents .three_card {
+    display: flex;
+  }
+  .parents .three_card h6 {
+    font-size: 16px;
+  }
+  .parents .three_card .parents_img {
+    position: static;
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+  }
+  .parents .six {
+    gap: 24px;
+  }
+  .parents .six a {
+    font-size: 14px;
   }
   footer .main_container {
     padding: 0 15px;

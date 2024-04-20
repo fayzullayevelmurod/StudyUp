@@ -1,3 +1,67 @@
+@media only screen and (max-width: 1235px) {
+    .parents {
+        .parents_cards {
+            gap: 32px;
+        }
+
+        .parents_card {
+            p {
+                font-size: 14px;
+                line-height: 18px;
+            }
+
+            .parents_card_user {
+                span {
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
+        }
+
+        .parent_cards_top {
+            gap: 25px;
+        }
+
+        .parent_cards_bottom {
+            gap: 46px;
+        }
+
+        .three_card {
+            h6 {
+                padding-right: 20px;
+                font-size: 18px;
+                line-height: 22px;
+            }
+
+            .parents_img {  
+                bottom: 0;
+                right: 12px;
+                bottom: 2px;
+            }
+        }
+
+        .one {
+            max-width: 333px;
+        }
+
+        .two {
+            max-width: 302px;
+        }
+
+        .three {
+            max-width: 274px;
+        }
+
+        .four {
+            max-width: 340px;
+        }
+
+        .five {
+            max-width: 340px;
+        }
+    }
+}
+
 @media only screen and (max-width: 1200px) {
 
     .main_title {
@@ -808,6 +872,42 @@
         }
     }
 
+    .parents {
+        margin-bottom: 70px;
+
+        .parents_title {
+            .main_title {
+                margin-bottom: 12px;
+                font-size: 36px;
+                line-height: 47px;
+            }
+
+            h4 {
+                font-size: 22px;
+                line-height: 26px;
+            }
+        }
+
+        .parents_cards {
+            display: none;
+        }
+
+        .parents_cards_table {
+            display: flex;
+
+            .one,
+            .two,
+            .three,
+            .four {
+                max-width: 100%;
+            }
+
+            .five {
+                max-width: 100%;
+            }
+        }
+    }
+
     footer {
         .main_container {
             flex-wrap: wrap;
@@ -1574,6 +1674,69 @@
             h6 {
                 font-size: 20px;
                 line-height: 22px;
+            }
+
+            .homework_help_bottom  {
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .parents {
+
+        .parents_title {
+            .main_title {
+                margin-bottom: 16px;
+                font-size: 22px;
+                line-height: 26px;
+            }
+
+            h4 {
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+
+        .parents_cards_table {
+            flex-direction: column;
+            gap: 28px;
+
+            .one,
+            .two,
+            .three,
+            .four,
+            .five,
+            .six {
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+
+        .parents_card {
+            padding: 12px 16px;
+        }
+
+        .three_card {
+            display: flex;
+
+            h6 {
+                font-size: 16px;
+            }
+
+            .parents_img {
+                position: static;
+                width: 60px;
+                height: 60px;
+                flex-shrink: 0;
+            }
+        }
+
+        .six {
+            gap: 24px;
+            a {
+                font-size: 14px;
             }
         }
     }
