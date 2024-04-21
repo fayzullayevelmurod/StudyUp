@@ -1331,6 +1331,7 @@ header .header_media.active {
   display: flex;
   align-items: center;
   gap: 12px;
+  position: relative;
 }
 .tutor_catalog .tutor_catalog_title .tutor_catalog_btns button {
   padding: 10px 22px;
@@ -1358,6 +1359,72 @@ header .header_media.active {
 }
 .tutor_catalog .tutor_catalog_title .tutor_catalog_btns button.active svg path {
   fill: rgb(255, 255, 255);
+}
+.tutor_catalog .tutor_catalog_title .mathematics_btn {
+  position: relative;
+}
+.tutor_catalog .tutor_catalog_title .mathematics_btn .mathematics_list {
+  display: none;
+}
+.tutor_catalog .tutor_catalog_title .mathematics_btn:hover .mathematics_list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.tutor_catalog .tutor_catalog_title .mathematics_btn:hover .mathematics_list a {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+}
+.tutor_catalog .tutor_catalog_title .mathematics_btn:hover .mathematics_list a h6 {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.tutor_catalog .tutor_catalog_title .mathematics_btn:hover .mathematics_list a h6 span {
+  display: block;
+  color: rgb(140, 140, 140);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.tutor_catalog .tutor_catalog_title .target_btn .target_list {
+  display: none;
+}
+.tutor_catalog .tutor_catalog_title .target_btn:hover .target_list {
+  display: flex;
+}
+.tutor_catalog .tutor_catalog_title .class_btn .class_list {
+  display: none;
+}
+.tutor_catalog .tutor_catalog_title .class_btn:hover .class_list {
+  display: flex;
+}
+.tutor_catalog .tutor_catalog_title .down_content {
+  position: absolute;
+  top: 55px;
+  margin: 0 auto;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.tutor_catalog .tutor_catalog_title .down_content .down_icon {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.tutor_catalog .tutor_catalog_title .down_content a {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
 }
 .tutor_catalog .tutor_catalog_title .media_filter_btn {
   display: none;

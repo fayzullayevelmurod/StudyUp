@@ -1583,6 +1583,7 @@ header {
         .tutor_catalog_btns {
             @include flex-center();
             gap: 12px;
+            position: relative;
 
             button {
                 padding: 10px 22px;
@@ -1617,6 +1618,97 @@ header {
                         fill: rgb(255, 255, 255);
                     }
                 }
+            }
+        }
+
+        .mathematics_btn {
+            position: relative;
+            
+            .mathematics_list {
+                display: none;
+            }
+
+            &:hover {
+                .mathematics_list {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    a {
+                        @include flex-start();
+                        gap: 20px;
+
+                        h6 {
+                            color: rgb(0, 0, 0);
+                            font-size: 18px;
+                            font-weight: 400;
+                            line-height: 22px;
+
+                            span {
+                                display: block;
+                                color: rgb(140, 140, 140);
+                                font-size: 14px;
+                                font-weight: 400;
+                                line-height: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .target_btn {
+
+            .target_list {
+                display: none;
+            }
+
+            &:hover {
+                .target_list {
+                    display: flex;
+                }
+            }
+        }
+
+        .class_btn {
+            .class_list {
+                display: none;
+            }
+
+            &:hover {
+                .class_list {
+                    display: flex;
+                }
+            }
+        }
+
+
+        .down_content {
+            position: absolute;
+            top: 55px;
+            margin: 0 auto;
+            width: 300px;
+            padding: 20px;
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+            background: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            
+            .down_icon {
+                position: absolute;
+                top: -10px;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+            }
+
+            a {
+                color: rgb(0, 0, 0);
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 22px;
             }
         }
 

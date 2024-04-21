@@ -59,3 +59,65 @@ var swiper = new Swiper(".teacherSwiper", {
         },
     },
 });
+
+
+// Input number
+let input = document.querySelector("#requestPhone");
+let input2 = document.querySelector("#requestPhone2");
+window.intlTelInput(input, {});
+window.intlTelInput(input2, {});
+
+let inputValue1 = document.querySelector("#requestPhone");
+let inputValue2 = document.querySelector("#requestPhone2");
+let countryCode = "+1";
+inputValue1.value = countryCode;
+inputValue2.value = countryCode;
+
+
+$('.input_phone__wrap').each(function (idx, el) {
+    let inp = $(el).find('input[type="tel"]')[0];
+    $(inp).inputmask({"mask": "+9(999)999-9999"})
+    $(inp).on('input', function () {
+        setTimeout(() => {
+            let ico = $(el).find('.iti__selected-flag .iti__flag')[0].getAttribute('class').split(' ')[1]
+            if (ico.length > 5) {
+                ico = ico.slice(ico.length - 2)
+                fetchCountry(inp, ico.toUpperCase());
+            }
+        }, 200);
+    })
+
+    $(el).find('.iti__country-list li').each(function (li_idx, li) {
+        $(li).click(function () {
+            let code = $(li).find('.iti__dial-code').text();
+            $(inp).val(code);
+            setTimeout(() => {
+                let ico = $(el).find('.iti__selected-flag .iti__flag')[0].getAttribute('class').split(' ')[1]
+                if (ico.length > 5) {
+                    ico = ico.slice(ico.length - 2)
+                    fetchCountry(inp, ico.toUpperCase());
+                }
+            }, 200);
+        })
+    })
+})
+
+
+function fetchCountry (el, ico) {
+    fetch("./js/country.json")
+        .then((res) => res.json())
+        .then(res => {
+            res.forEach(c => {
+                if (c.iso == ico) {
+                    let m = c.mask;
+                    let code = ''
+                    for (let i = 1; i < c.code.length; i++) {
+                        code += '9'
+                    }
+                    $(el).inputmask({"mask": `+${code}${m}`})
+                }
+            })
+        })
+}
+
+
