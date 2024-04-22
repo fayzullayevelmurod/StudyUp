@@ -112,6 +112,14 @@ label {
     margin: 0 auto;
 }
 
+.iti__selected-flag {
+    padding: 0 6px 12px 6px;
+}
+
+.iti {
+    width: 100% !important;
+}
+
 .main_btn {
     color: rgb(255, 255, 255);
     font-size: 18px;
@@ -486,6 +494,7 @@ header {
         flex-direction: column;
 
         input {
+            width: 100%;
             margin-bottom: 37px;
             outline: none;
             color: rgb(140, 140, 140);
@@ -502,6 +511,7 @@ header {
         }
 
         .main_btn {
+            margin-top: 20px;
             padding: 15px 0;
         }
 
@@ -1682,7 +1692,6 @@ header {
                 }
             }
         }
-
 
         .down_content {
             position: absolute;

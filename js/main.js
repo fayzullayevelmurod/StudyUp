@@ -35,7 +35,7 @@ items.forEach((item) => {
 // accardion
 
 
-var swiper = new Swiper(".teacherSwiper", {
+let swiper = new Swiper(".teacherSwiper", {
     navigation: {
       nextEl: ".teacher-button-next",
       prevEl: ".teacher-button-prev",
@@ -101,6 +101,45 @@ $('.input_phone__wrap').each(function (idx, el) {
         })
     })
 })
+
+// Form validation
+document.querySelector('.form-sec-btn').addEventListener('click', function(event) {
+    var nameInput = document.getElementById('requestName');
+    var phoneInput = document.getElementById('requestPhone2');
+    var textErrors = document.querySelectorAll('.t-input-error'); // querySelectorAll() ishlatiladi
+
+    let hasError = false;
+
+    if (!/^[a-zA-Z]+$/.test(nameInput.value)) {
+        nameInput.classList.add('error');
+        hasError = true;
+        textErrors.forEach(function(textError) {
+            textError.classList.add('active');
+        });
+    } else {
+        nameInput.classList.remove('error');
+    }
+    
+    if (phoneInput.value.length < 7 || isNaN(parseInt(phoneInput.value))) {
+        phoneInput.classList.add('error');
+        hasError = true;
+        textErrors.forEach(function(textError) {
+            textError.classList.add('active');
+        });
+    } else {
+        phoneInput.classList.remove('error');
+    }
+
+    if (hasError) {
+        event.preventDefault(); 
+        setTimeout(function() {
+            textErrors.forEach(function(textError) {
+                textError.classList.remove('active');
+            });
+        }, 5000); // 10 sekunddan keyin .active olib tashlash
+    }
+});
+
 
 
 function fetchCountry (el, ico) {
