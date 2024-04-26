@@ -244,8 +244,7 @@ header .header_media_bg {
   left: 0;
   top: 0;
   background: rgba(255, 255, 255, 0.2);
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
 }
 header .header_media_bg.active {
   display: block;
@@ -1399,11 +1398,17 @@ header .header_media.active {
   font-weight: 400;
   line-height: 18px;
 }
+.tutor_catalog .tutor_catalog_title .target_btn {
+  position: relative;
+}
 .tutor_catalog .tutor_catalog_title .target_btn .target_list {
   display: none;
 }
 .tutor_catalog .tutor_catalog_title .target_btn:hover .target_list {
   display: flex;
+}
+.tutor_catalog .tutor_catalog_title .class_btn {
+  position: relative;
 }
 .tutor_catalog .tutor_catalog_title .class_btn .class_list {
   display: none;
@@ -1422,6 +1427,8 @@ header .header_media.active {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .tutor_catalog .tutor_catalog_title .down_content .down_icon {
   position: absolute;
@@ -1448,6 +1455,104 @@ header .header_media.active {
   justify-content: space-between;
   border-radius: 7px;
   background: rgb(117, 131, 255);
+}
+.tutor_catalog .media_filter_content {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+}
+.tutor_catalog .media_filter_content.active {
+  display: block;
+}
+.tutor_catalog .media_filter_content .content_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 15px 55px 15px;
+}
+.tutor_catalog .media_filter_content .content_center {
+  margin: 0px 15px;
+}
+.tutor_catalog .media_filter_content .content_center .accordion_item {
+  border-bottom: 2px solid #DFDFDF;
+  margin-top: 8px;
+}
+.tutor_catalog .media_filter_content .content_center .accordion_item.active .accordion_btn {
+  padding: 0;
+}
+.tutor_catalog .media_filter_content .content_center .accordion_item.active .content {
+  display: flex;
+  margin: 16px 0 12px 0;
+}
+.tutor_catalog .media_filter_content .content_center .accordion_item.active .accordion_btn img {
+  transform: rotate(270deg);
+}
+.tutor_catalog .media_filter_content .content_center .accordion_btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0 12px 0;
+  width: 100%;
+}
+.tutor_catalog .media_filter_content .content_center .accordion_btn span {
+  color: #000;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 35px;
+}
+.tutor_catalog .media_filter_content .content_center .accordion_btn img {
+  transform: rotate(90deg);
+}
+.tutor_catalog .media_filter_content .content_center .content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.tutor_catalog .media_filter_content .content_center .content button {
+  border-radius: 7px;
+  background: #DFDFDF;
+  padding: 10px 22px;
+  color: #000;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.tutor_catalog .media_filter_content .content_bottom {
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid #DFDFDF;
+  width: 100%;
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tutor_catalog .media_filter_content .content_bottom button {
+  padding: 12px 22px;
+  border-radius: 7px;
+  background: rgba(117, 131, 255, 0.2);
+  color: #7583FF;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  width: 170px;
+}
+.tutor_catalog .media_filter_content .content_bottom button:last-child {
+  color: #fff;
+  background-color: #7583FF;
+  margin-left: 20px;
 }
 .tutor_catalog .tutor_catalog_content {
   display: flex;
@@ -1734,9 +1839,7 @@ header .header_media.active {
 }
 .teacher_slider .teacherSwiper .teacher_slider_card {
   width: 100%;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 .teacher_slider .teacherSwiper .teacher_slider_card img {
   padding: 0 12px;
@@ -3801,4 +3904,6 @@ footer .footer_left span {
   footer .main_container .footer_left {
     margin-bottom: 12px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
