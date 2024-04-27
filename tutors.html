@@ -157,7 +157,20 @@
                     <form action="#" class="contact_block_form">
                         <input type="text" placeholder="Ваше имя">
                         <input type="email" placeholder="E-mail">
-                        <input class="tel" type="tel" placeholder="+7(999) 999-99-99">
+                        <div class="phone_mask">
+                            <button class="phone_mask__open" type="button">
+                                <img src="./images/ru_flag.png" alt="">
+                                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 5L0 0H8L4 5Z" fill="#8C8C8C"/>
+                                </svg>
+                                <span>+7</span>
+                            </button>
+                            <input type="tel" placeholder="(999) 999-99-99">
+            
+                            <div class="phone_mask__country">
+                                <ul></ul>
+                            </div>
+                        </div>
                         <button class="main_btn" type="submit">
                             Оставить заявку
                         </button>
@@ -337,6 +350,7 @@
         <!-- footer -->
     </div>
     
+    <script src="https://unpkg.com/imask"></script>
     <!-- Swiper js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Swiper js -->

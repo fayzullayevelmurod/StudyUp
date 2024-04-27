@@ -152,6 +152,18 @@ label {
   border: 1px solid rgb(140, 140, 140);
   border-radius: 7px;
 }
+.main_form .phone_mask {
+  border: 1px solid rgb(140, 140, 140);
+  border-radius: 7px;
+  padding: 15px 20px;
+}
+.main_form .phone_mask__open {
+  padding: 0;
+}
+.main_form .phone_mask input {
+  border: 0;
+  padding: 0;
+}
 .main_form label {
   color: rgb(0, 0, 0);
   font-size: 16px;
@@ -166,6 +178,98 @@ label {
   background: rgb(117, 131, 255);
   font-size: 16px;
   line-height: 18px;
+}
+
+.phone_mask {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+.phone_mask__open {
+  display: flex;
+  align-items: center;
+  top: 0;
+  height: 100%;
+  padding-bottom: 12px;
+  flex-shrink: 0;
+}
+.phone_mask__open img {
+  width: 18px;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
+}
+.phone_mask__open svg {
+  margin: 0 8px 0 4px;
+}
+.phone_mask__open span {
+  font-size: 16px;
+  line-height: 20px;
+}
+.phone_mask input {
+  color: black !important;
+  border-bottom: 0 !important;
+}
+.phone_mask__country {
+  z-index: 2;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  transform: translateY(calc(100% + 10px));
+  display: none;
+}
+.phone_mask__country.active {
+  display: block;
+}
+.phone_mask__country ul {
+  padding: 10px 0;
+  max-height: 250px;
+  overflow-y: scroll;
+  width: 100%;
+}
+.phone_mask__country ul::-webkit-scrollbar {
+  width: 5px;
+}
+.phone_mask__country ul::-webkit-scrollbar-thumb {
+  background: rgba(128, 128, 128, 0.6);
+  border-radius: 5px;
+}
+.phone_mask__country ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  font-size: 12px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  gap: 10px;
+}
+.phone_mask__country ul li:hover {
+  background: rgba(128, 128, 128, 0.25);
+}
+.phone_mask__country ul button {
+  width: 100%;
+  text-align: left;
+}
+.phone_mask__country ul span:not(.right_text) {
+  width: 70%;
+}
+.phone_mask__country ul img {
+  width: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.phone_mask__country ul .right_text {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-shrink: 0;
 }
 
 .pagination {
@@ -244,7 +348,8 @@ header .header_media_bg {
   left: 0;
   top: 0;
   background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
 }
 header .header_media_bg.active {
   display: block;
@@ -432,6 +537,15 @@ header .header_media.active {
   padding-bottom: 12px;
   border: none;
   border-bottom: 1px solid rgb(0, 0, 0);
+}
+.contact_block .contact_block_form input[type=tel] {
+  margin-bottom: 0;
+}
+.contact_block .contact_block_form .phone_mask span {
+  font-size: 16px;
+  margin: 0;
+  line-height: 20px;
+  text-align: left;
 }
 .contact_block .contact_block_form .tel {
   margin-bottom: 23px;
@@ -1430,6 +1544,17 @@ header .header_media.active {
   left: 50%;
   transform: translateX(-50%);
 }
+.tutor_catalog .tutor_catalog_title .down_content::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  background: transparent;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+}
 .tutor_catalog .tutor_catalog_title .down_content .down_icon {
   position: absolute;
   top: -10px;
@@ -1839,7 +1964,9 @@ header .header_media.active {
 }
 .teacher_slider .teacherSwiper .teacher_slider_card {
   width: 100%;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .teacher_slider .teacherSwiper .teacher_slider_card img {
   padding: 0 12px;
@@ -2667,6 +2794,9 @@ footer .footer_left span {
     gap: 77px;
   }
   .about_form input {
+    font-size: 14px;
+  }
+  .about_form .phone_mask span {
     font-size: 14px;
   }
   .about_form .main_btn {
@@ -3904,6 +4034,4 @@ footer .footer_left span {
   footer .main_container .footer_left {
     margin-bottom: 12px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

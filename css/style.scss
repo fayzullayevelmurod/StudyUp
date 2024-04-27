@@ -187,6 +187,21 @@ label {
         border: 1px solid rgb(140, 140, 140);
         border-radius: 7px;
     }
+    
+    .phone_mask {
+        border: 1px solid rgb(140, 140, 140);
+        border-radius: 7px;
+        padding: 15px 20px;
+
+        &__open {
+            padding: 0;
+        }
+
+        input {
+            border: 0;
+            padding: 0;
+        }
+    }
 
     label {
         color: rgb(0, 0, 0);
@@ -203,6 +218,114 @@ label {
         background: rgb(117, 131, 255);
         font-size: 16px;
         line-height: 18px;
+    }
+}
+
+.phone_mask {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+
+    &__open {
+        display: flex;
+        align-items: center;
+        top: 0;
+        height: 100%;
+        padding-bottom: 12px;
+        flex-shrink: 0;
+
+        img {
+            width: 18px;
+            box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        svg {
+            margin: 0 8px 0 4px;
+        }
+
+        span {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    input {
+        color: black !important;
+        border-bottom: 0 !important;
+    }
+    
+    &__country {
+        z-index: 2;
+        background: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        transform: translateY(calc(100% + 10px));
+        display: none;
+        
+        &.active {
+            display: block;
+        }
+
+        ul {
+            padding: 10px 0;
+            max-height: 250px;
+            overflow-y: scroll;
+            width: 100%;
+
+            &::-webkit-scrollbar {
+                width: 5px;
+            }
+            
+            &::-webkit-scrollbar-thumb {
+                background: rgba(128, 128, 128, 0.6); 
+                border-radius: 5px;
+            }
+
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 5px 10px;
+                font-size: 12px;
+                user-select: none;
+                cursor: pointer;
+                gap: 10px;
+    
+                &:hover {
+                    background: rgba(128, 128, 128, 0.25);
+                }
+            }
+
+            button {
+                width: 100%;
+                text-align: left;
+            }
+
+            span {
+                &:not(.right_text) {
+                    width: 70%;
+                }
+            }
+
+            img {
+                width: 25px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            }
+
+            .right_text {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                flex-shrink: 0
+            }
+        }
     }
 }
 
@@ -504,6 +627,20 @@ header {
             padding-bottom: 12px;
             border: none;
             border-bottom: 1px solid rgb(0, 0, 0);
+        }
+
+        input[type="tel"] {
+            // padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        .phone_mask {
+            span {
+                font-size: 16px;
+                margin: 0;
+                line-height: 20px;
+                text-align: left;
+            }
         }
 
         .tel {
@@ -1707,6 +1844,19 @@ header {
             gap: 20px;
             left: 50%;
             transform: translateX(-50%);
+
+            &::before {
+                content: "";
+                position: absolute;
+                height: 20px;
+                width: 100%;
+                background: transparent;
+                z-index: 2;
+                top: 0;
+                left: 0;
+                transform: translateY(-100%);
+            }
+
             .down_icon {
                 position: absolute;
                 top: -10px;
@@ -1747,6 +1897,7 @@ header {
         width: 100%;
         height: 100vh;
         background-color: #fff;
+
         &.active 
         {
             display: block;
